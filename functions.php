@@ -1,43 +1,30 @@
+
+<!-- TODO - add style sheet function in here -->
+
 <?php 
-//load style sheets
-function load_css(){
-    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', 
-    array(), false, 'all');
-
-    wp_enqueue_style('bootstrap');
-
-    wp_register_style('main', get_template_directory_uri() . '/css/main.css', 
-    array(), false, 'all');
-
-    wp_enqueue_style('main');
-
-}
-add_action('wp_enqueue_scripts', 'load_css');
-
-//load js
-function load_js(){
-    wp_enqueue_script('jquery');
-    wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js',
-     'jquery', false, true);
-     wp_enqueue_script('bootstrap');
-}
-add_action('wp_enqueue_scripts', 'load_js');
-
-
-
-
 // theme options
 
 add_theme_support('menus');
 
-// menus
-
-register_nav_menus(
-    array(
-        'Nav-General' => 'Nav-General Location',          // id --> visual name of menu
-        'Mobile-menu' => 'Mobile Menu Location',
-        )
-    );
 
 
-    ?>
+   // Add the main nav header menu
+   if ( function_exists( 'register_nav_menus' ) ) {
+  
+    function register_my_menu() {
+    register_nav_menu('header-menu', __( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+}
+
+
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+?>
