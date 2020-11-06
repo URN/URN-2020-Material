@@ -1,22 +1,19 @@
-# URN PORTAL
+# URN 2020 Redesign
 
-=== URN PORTAL===
-Contributors: Ricky Eatough
-Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+=== URN 2020 Redesign===
+Contributors: Dermot Newton
+Tags: 
 Stable tag: 0.1
 
 == Description ==
 
 Work In progress - V0.1
-URN PORTAL THEME created for use on URN's new internal members portal - 2020 intranet. Based on SB-Admin 2 alongside Boostrap 4 to create a mobile oreintated experience for all URN Membrers, regardless of device.
+URN 2020 website Redesign. Initially Based on the Bootstrap 4 Landing Page theme alongside Boostrap 4 to create a mobile oreintated experience for all URN Membrers, regardless of device.
 
 
 ## About
 
-URN PORTAL THEME created for use on URN's new internal members portal - 2020 intranet.
-![Theme preview](/screenshot.png?raw=true "Theme design")
 
-Based on Bootstrap 4 and [SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/). For use with WordPress
 
 Plugins required:
  - 
