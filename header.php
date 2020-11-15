@@ -31,7 +31,8 @@
 
 </head>
 
-
+<div class="header-background">
+  
 <div class="container">
 
   <div class="row">
@@ -39,19 +40,19 @@
           <h1></h1>
         </div>
         <div class="col-lg-9">
-          <h1>University Radio Nottingham</h1>
+           <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/title-logo.jpg" />'; ?>
         </div>
        
   </div>
+  <!-- 
   <div class="row">
         <div class="col-lg-3">
           <h1></h1>
         </div>
         <div class="col-lg-9">
-          <h1>Your Music. Your News. Your Student Sound</h1>
         </div>
        
-  </div>
+  </div>-->
 </div>
 
 
@@ -62,6 +63,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>
     </button>
+    
     <a class="navbar-brand" href="#"></a>
         <?php
         wp_nav_menu( array(
@@ -78,6 +80,7 @@
     </div>
 </nav>
 
+</div>
 
 
 

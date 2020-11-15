@@ -44,24 +44,102 @@
       </div>
     </div>
   </header>
+<div class="main-content">
+  <div class="box-container-nowplaying">
+    <div class="box1-content content">
+        
+      <div class="container">
 
-  <div class="box-container">
-  <div class="box1-content content">
-    <h1>NOW PLAYING</h1>
-    <div class="show-name">Kathryn Embree</div>
-    <div class="shows-time">11am-12am</div>
-  </div>
-  <div class="box1-side">
+          <div class="row">
+            <div class="col">
+              <div class="now-playing"> NOW PLAYING 
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="show-name">The URN Show - Kathryn Embree 
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="shows-time">11am-12am
+              </div>
+            </div>
+          </div>
+
+
+
+          <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
+
+      </div>
+
+    </div>
+      
+    <div class="box1-side">
     <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG">
-    
-    <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
-    
-    <!-- ⟶ -->
+    </div>
   </div>
+
+
+  <div class="box-container-upnext">
+    <div class="box1-content content">
+        
+      <div class="container">
+
+          <div class="row">
+            <div class="col">
+              <div class="now-playing"> UP NEXT
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col">
+              <div class="show-name">URN Lockdown - Flora Wordie 
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="shows-time">11am-12am
+              </div>
+            </div>
+          </div>
+
+        <!--  <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button> -->
+
+      </div>
+
+    </div>
+      
+    <div class="box1-side">
+      
+      <div class="reminder-text">
+        Set Reminder
+      </div>
+      <div class="seeschedule-text">
+        See Full Schedule
+      </div>
+   <!-- <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG"> -->
+    </div>
+  </div>
+
+
+
+
+
+</div> <!-- div for all content that has white background-->
+
+    <!-- ⟶ -->
 
   
-</div>
-
 
 
   <!-- Icons Grid -->
