@@ -44,103 +44,102 @@
       </div>
     </div>
   </header>
+  <div class="row">
+    <div class="col">
+      <div class="text-center">
+        <h1 class ="LiveOnAir"> LIVE ON AIR</h1>
+      </div>
+    </div>
+  </div>
+
 <div class="main-content">
-  <div class="box-container-nowplaying">
-    <div class="box1-content content">
-        
-      <div class="container">
-
-          <div class="row">
-            <div class="col">
-              <div class="now-playing"> NOW PLAYING 
+  <div class="row">
+    <div class="col-8">
+      <div class="box-container-nowplaying">
+        <div class="box1-content content">
+          <div class="container">
+            <h1 class="display-4">NOW PLAYING</h1>
+              <div class="row">
+                <div class="col">
+                  <div class="text-left">The URN Show - Kathryn Embree 
+                  </div>
+                </div>
               </div>
+              <div class="row">
+                <div class="col">
+                  <div class="text-left">11am-12am
+                  </div>
+                </div>
+              </div>
+              <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
+          </div>
+        </div>
+      <div class="box1-side">
+        <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG">
+      </div>
+    </div>
+    <div class="box-container-upnext">
+      <div class="box1-content content">  
+        <div class="container">
+          <div class="display-4"> UP NEXT
+            </div>
+              <div class="row">
+                <div class="col">
+                  <div class="text-left">URN Lockdown - Flora Wordie 
+                  </div>
+                </div>
+              </div>
+            <div class="row">
+                <div class="col">
+                  <div class="text-left">11am-12am</div>
+                </div>
+            </div>
+          <!--  <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button> -->
+        </div>  <!-- Div for container class-->
+      </div>
+      <div class="row">
+        <div class="col-11.8">
+          <div class="box1-side">
+            <div class="text-center">
+              Set Reminder
+            </div>
+          <div class="divider">
+            <div class="text-center">
+              Full Schedule
             </div>
           </div>
+          <!-- <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG"> -->
+        </div>
+      </div>
+    </div>
 
-          <div class="row">
-            <div class="col">
-              <div class="show-name">The URN Show - Kathryn Embree 
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <div class="shows-time">11am-12am
-              </div>
-            </div>
-          </div>
-
-
-
+    <!--  <div class="row">
+      <div class="col-0.2">
+        <div class="fullSchedule">
           <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
+        </div>
+      </div>
+      </div>-->
 
+     <div class="col-3">
+      <button type="button" class="btn btn-primary">Block level button</button>
+      <!--    <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> Shows of the Month  </a> </button>-->
       </div>
 
-    </div>
-      
-    <div class="box1-side">
-    <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG">
-    </div>
   </div>
-
-
-  <div class="box-container-upnext">
-    <div class="box1-content content">
-        
-      <div class="container">
-
-          <div class="row">
-            <div class="col">
-              <div class="now-playing"> UP NEXT
-              </div>
-            </div>
-          </div>
+  
+</div>
 
 
 
-          <div class="row">
-            <div class="col">
-              <div class="show-name">URN Lockdown - Flora Wordie 
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <div class="shows-time">11am-12am
-              </div>
-            </div>
-          </div>
-
-        <!--  <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button> -->
-
-      </div>
-
-    </div>
-      
-    <div class="box1-side">
-      
-      <div class="reminder-text">
-        Set Reminder
-      </div>
-      <div class="seeschedule-text">
-        See Full Schedule
-      </div>
-   <!-- <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG"> -->
-    </div>
-  </div>
-
-
-
-
-
+</div>
 </div> <!-- div for all content that has white background-->
 
     <!-- ⟶ -->
 
   
-
+<div class="section-2-index">
+</div>
 
   <!-- Icons Grid -->
   <section class="features-icons bg-light text-center">
