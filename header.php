@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/scss/urnportal.scss' ?>">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
@@ -33,16 +33,13 @@
 
 <div class="header-background">
   
-<div class="container">
+  <div class="container">
 
-  <div class="row">
-        <div class="col-lg-3">
-          <h1></h1>
-        </div>
-        <div class="col-lg-9">
-           <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/title-logo.jpg" />'; ?>
-        </div>
-       
+    <div class="row justify-content-center">
+      
+      <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?>
+      <h1 class="website-name">University Radio Nottingham</h1>
+    </div>
   </div>
   <!-- 
   <div class="row">
@@ -53,9 +50,10 @@
         </div>
        
   </div>-->
-</div>
 
 
+<div class="header">
+<div class="row justify-content-center">
 
 <nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->
   <div class="container">
@@ -79,7 +77,9 @@
         ?>
     </div>
 </nav>
-
+        </div>
+</div>
+</div>
 </div>
 
 
