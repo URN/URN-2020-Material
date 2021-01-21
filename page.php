@@ -18,6 +18,32 @@
 
 
 <div class="main-page-content">
+<?php
+                // Start the loop.                </div>
+                while ( have_posts() ) : the_post();
+
+                    // Include the page content template.
+                
+
+            ?> 
+            <div class="row">
+                <div class="col">
+
+                <?php 
+      $user = wp_get_current_user();
+      if ( in_array( 'Administrator', $user->roles ) ) { ?>
+          <!-- Any HTML what you need to hide from "Customers" and show for "Vendor" -->
+      	<div>
+      	  <?php edit_post_link(__('Edit Page')); ?>
+    	</div>
+      <?php  } ?>
+
+            <article id="post-<?php the_ID();?>" <?php post_class();?>>
+                <header class="entry-header">
+                 
+                        <?php the_title('    <div class="text-center"> <h1 class="entry-title">','</h1> </div>');?>
+                    </div>
+            </div>
     <div class="entry-content">
         <div class="container">
             <div class="row">
@@ -26,21 +52,11 @@
                 <div class="col-sm-10">      
                     
            
-
-                    <?php
-                // Start the loop.                </div>
-                while ( have_posts() ) : the_post();
-
-                    // Include the page content template.
-
-            ?> 
-            <article id="post-<?php the_ID();?>" <?php post_class();?>>
-                <header class="entry-header">
-                    <div class="text-center">
-                        <?php the_title('<h1 class="entry-title">','</h1>');?>
-                    </div>
+             
                 </header>
                 <div class="entry-content">
+                <div class="text-center"> <!-- CHANGE THIS FOR TEXT ALLIGNMENT-->
+
                     <?php the_content(); ?>
                     <?php
                         wp_link_pages( array(

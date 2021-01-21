@@ -597,17 +597,60 @@ border-width: 1px;*/
       font-size: 0.7rem;
       padding-left: 30%;
   }
+  /*******************************************************************************************/
+  
+  .entry-title {
+      /*  color: red;
+      /*  border-bottom: 3px solid rgba(192, 192, 192, 0);
+       -webkit-transition: border 500ms ease;
+      -moz-transition: border 500ms ease;
+      -ms-transition: border 500ms ease;
+      -o-transition: border 500ms ease;
+      transition: border 500ms ease;*/
+  }
+  
+  .entry-title:after {
+      position: absolute;
+      left: 16.85em;
+      content: '';
+      height: 1.2em;
+      width: 275px;
+      border-bottom: solid 5px #ff00ffa9;
+      -webkit-transform: scaleX(1.0010);
+      -ms-transform: scaleX(1.0010);
+      transform: scaleX(1.0010);
+      -webkit-transition: -webkit-transform 1000ms ease-in-out;
+      transition: transform 1000ms ease-in-out;
+  }
+  
+  .entry-title:hover:after {
+      -webkit-transform: scaleX(4.689);
+      -ms-transform: scaleX(4.689);
+      transform: scaleX(4.689);
+  }
+  /*.entry-title:hover {
+      border-bottom: 3px solid rgb(169, 37, 221);
+  }*/
   
   .showcase-img1 {
-      background: url(bg-masthead.jpg) no-repeat center center;
+      background: url(img/blm.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
   }
   
   .showcase-img2 {
-      background: url(bg-masthead.jpg) no-repeat center center;
+      background: url(img/studio.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
   }
   
   .showcase-img3 {
-      background: url(bg-masthead.jpg) no-repeat center center;
+      background: url(img/pat.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
   }
   
   header.masthead {
@@ -644,7 +687,10 @@ border-width: 1px;*/
   }
   
   .showcase .showcase-text {
-      padding: 3rem;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      background-color: #5F2A87;
+      color: white;
   }
   
   .showcase .showcase-img {

@@ -46,8 +46,9 @@
   </header>
   <div class="row">
     <div class="col">
-      <div class="text-center">
-        <h1 class ="LiveOnAir"> LIVE ON AIR</h1>
+        <div class="text-center">
+
+          <h1 class="entry-title">LIVE ON AIR</h1>
       </div>
     </div>
   </div>
@@ -141,11 +142,9 @@
     <!-- ⟶ -->
 
   
-<div class="section-2-index">
-</div>
-
   <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
+ <!--
+ <section class="features-icons bg-light text-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -177,7 +176,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Image Showcases -->
   <section class="showcase">
@@ -186,26 +185,35 @@
 
         <div class="col-lg-6 order-lg-2 text-white showcase-img1" ></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text"> 
-          <h2>Fully Responsive Design</h2>
-          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          <div class="container">
+          <h2>#BLM in Nottingham</h2>
+          <p class="lead mb-0">Take a deep dive into what you can do to support the #BLM movement while in Nottingham and hear the latest news regarding racial justice.</p>
         </div>
+        </div>
+
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img2"></div>
         <div class="col-lg-6 my-auto showcase-text">
-          <h2>Updated For Bootstrap 4</h2>
-          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+        <div class="container">
+          <h2>Flora's Daytime Guide</h2>
+          <p class="lead mb-0">Hear all the new stories of the week circulating around wherever you may be</p>
         </div>
       </div>
+      </div>
+
       <div class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img3" ></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+        <div class="container">
+          <h2>Superbowl LV</h2>
+          <p class="lead mb-0">See our predictions heading into Superbowl weekend!</p>
         </div>
       </div>
+</div>
     </div>
   </section>
+  
 
   <!-- Testimonials -->
   <section class="testimonials text-center bg-light">
@@ -238,7 +246,8 @@
   </section>
 
   <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
+    <!-- 
+<section class="call-to-action text-white text-center">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -260,7 +269,7 @@
       </div>
     </div>
   </section>
-
+-->
   <!-- Footer -->
   <footer class="footer bg-light">
     <div class="container">
@@ -309,3 +318,5 @@
 
 
 </footer>
+
+<?php get_footer(); ?> 
