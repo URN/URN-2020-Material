@@ -44,13 +44,11 @@
       </div>
     </div>
   </header>
-  <div class="row">
-    <div class="col">
-        <div class="text-center">
+  <div class="row justify-content-center">
 
           <h1 class="entry-title">LIVE ON AIR</h1>
       </div>
-    </div>
+    
   </div>
 
 <div class="main-content">
@@ -179,6 +177,10 @@
   </section> -->
 
   <!-- Image Showcases -->
+  <div class="row justify-content-center">
+
+          <h1 class="entry-title">YOUR URN</h1>
+      </div>
   <section class="showcase">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
@@ -188,6 +190,7 @@
           <div class="container">
           <h2>#BLM in Nottingham</h2>
           <p class="lead mb-0">Take a deep dive into what you can do to support the #BLM movement while in Nottingham and hear the latest news regarding racial justice.</p>
+          <button type="button" class="btn btn-primary" id="listen-again">Listen Again</button>
         </div>
         </div>
 
@@ -198,6 +201,8 @@
         <div class="container">
           <h2>Flora's Daytime Guide</h2>
           <p class="lead mb-0">Hear all the new stories of the week circulating around wherever you may be</p>
+          <button type="button" class="btn btn-primary" id="listen-again">Listen Again</button>
+
         </div>
       </div>
       </div>
@@ -208,6 +213,8 @@
         <div class="container">
           <h2>Superbowl LV</h2>
           <p class="lead mb-0">See our predictions heading into Superbowl weekend!</p>
+          <button type="button" class="btn btn-primary" id="listen-again">Listen Again</button>
+
         </div>
       </div>
 </div>
@@ -216,29 +223,32 @@
   
 
   <!-- Testimonials -->
+  <div class="row justify-content-center">
+
+          <h1 class="entry-title">HOW TO GET INVOLVED</h1>
+      </div>
   <section class="testimonials text-center bg-light">
     <div class="container">
-      <h2 class="mb-5">What people are saying...</h2>
       <div class="row">
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="testimonials-1.jpg" alt="">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            <img class="img-fluid rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/img/grp.jpg" alt="">
+            <h5>Host a Show!</h5>
+            <p class="font-weight-light mb-0">Have something your passioate about? Get in contact with Tony and join the station as a URN official presenter. Anyone can give it a go!  Click here for more info.</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            <img class="img-fluid rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/img/tech2.jpg" alt="">
+            <h5>Get Hands on With the Tech Team</h5>
+            <p class="font-weight-light mb-0">Learn how our radio station operates and become a member of the team to code, design and engineer software, studios and audio for a global audience. We welcome any skill levels, its all about learning with us!  Click here for more info.</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            <img class="img-fluid rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/img/singer.jpg" alt="">
+            <h5>Partners and Collaborations</h5>
+            <p class="font-weight-light mb-0">We are always excited to work and discover new partners, sponsors and musicians. So if your a growing musician or a company looking for a partnership, we'd love to collaborate. Click here for more info.</p>
           </div>
         </div>
       </div>
