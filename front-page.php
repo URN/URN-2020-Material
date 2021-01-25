@@ -84,8 +84,38 @@
           </div>  
         </div>
       <div class="box1-side">
-        <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG">
-        <img class="play" src="<?php echo get_template_directory_uri(); ?>/play2.png">
+      <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
+
+<script>
+  var myAudio = document.getElementById("urnlive");
+  var isPlaying = false;
+
+  function togglePlay() {
+    if (isPlaying) {
+      myAudio.pause()
+      $('#livebutton').removeClass('fa-pause');
+      $('#livebutton').addClass('fa-play');
+    } else {
+      myAudio.play();
+      $('#livebutton').removeClass('fa-play');
+      $('#livebutton').addClass('fa-pause');
+    }
+  };
+  myAudio.onplaying = function() {
+    isPlaying = true;
+  };
+  myAudio.onpause = function() {
+    isPlaying = false;
+  };
+</script>
+       <!-- <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG">-->
+       <li class="nav-item">
+
+        <a class="but" onclick="togglePlay()">
+    <i class="fas fa-fw fa-play  fa-10x" onclick="togglePlay() "id="livebutton2"></i>
+</a>
+</li>
+        <!--<img class="play" src="<?php echo get_template_directory_uri(); ?>/play2.png">-->
 
 
       </div>

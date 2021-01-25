@@ -1,5 +1,5 @@
   /*!
- * URN PORTALTHEME
+ * URN MAINSITE
  * Copyright 2013-2020 - DERMOT NEWTON
  * Theme Name: URN MAIN_SITE_THEME
  * Author: Dermot Newton
@@ -31,6 +31,24 @@
       /*margin-left: 540px;*/
       padding-top: 2rem;
       padding-left: 2rem;
+  }
+  
+  .nav-item {
+      list-style: none;
+      margin-top: 0.5rem;
+      margin-left: 3.5rem;
+  }
+  
+  #livebutton2 {
+      padding-right: 2.4rem;
+      margin-top: 5px;
+      color: #ffffff;
+  }
+  
+  #livebutton2:hover {
+      padding-right: 2.4rem;
+      margin-top: 5px;
+      color: #bebebe;
   }
   
   .header .navbar {
