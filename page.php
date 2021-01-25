@@ -77,6 +77,10 @@
                             '</span>'
                         );
                     ?>
+
+
+
+                    
                 </footer>
             </article>
             <?php    // End the loop.

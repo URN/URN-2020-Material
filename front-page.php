@@ -1,19 +1,29 @@
 <?php get_header(); ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="University Radio Nottingham is the multi-award–winning university radio station of the University of Nottingham Students’ Union.">
+  <meta name="description" content="">
   <meta name="author" content="">
-  <title>URN MAIN SITE</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/bootstrap/css/bootstrap.min.css' ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/scss/urnportal.scss' ?>">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
+  <title>Landing Page - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/bootstrap/css/bootstrap.min.css'?> ">
+
+  <!-- Custom fonts for this template -->
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/simple-line-icons/css/simple-line-icons.css'?>">
+  <link  rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
+
 </head>
 
 <body>
@@ -176,49 +186,58 @@
     </div>
   </section> -->
 
-  <!-- Image Showcases -->
-  <div class="row justify-content-center">
 
-          <h1 class="entry-title">YOUR URN</h1>
+  <!-- Image Showcases -->
+  <div class="your-urn-section">
+
+  <div class="row justify-content-center">
+          <h1 class="entry-title-alt">YOUR URN</h1>
       </div>
   <section class="showcase">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
+<div class="row">
+<div class="col">
+  
+<?php if(have_posts()) : while(have_posts()) : the_post();?>
+  <?php endwhile; else: endif;?>
 
-        <div class="col-lg-6 order-lg-2 text-white showcase-img1" ></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text"> 
-          <div class="container">
-          <h2>#BLM in Nottingham</h2>
-          <p class="lead mb-0">Take a deep dive into what you can do to support the #BLM movement while in Nottingham and hear the latest news regarding racial justice.</p>
-          <button type="button" class="btn btn-primary" id="listen-again">Listen Again</button>
+  <?php
+    $args = array(
+
+        'post_type' => 'post',
+        'posts_per_page' => 3
+
+    );
+    $_posts = new WP_Query($args);
+    ?>
+
+    <?php if($_posts->have_posts()):?>
+    <div class="row mt-5">
+      <?php while ($_posts->have_posts()): $_posts->the_post();?>
+
+      <div class="col-lg-4">
+
+      <?php if(has_post_thumbnail()):?>
+      <a href="<?php the_permalink();?>">
+        <img src="<?php the_post_thumbnail_url('thumb_image');?>" class= "img-fluid mb-2" alt="<?php the_title();?>">
+        </a>
+        <?php endif?>
+
+      <a href="<?php the_permalink();?>">
+        <h1 class="post_title"><?php the_title();?> </h1>
+        </a>
+        <h4 class="post_excerpt"><?php the_excerpt();?></h4>
         </div>
-        </div>
 
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img2"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-        <div class="container">
-          <h2>Flora's Daytime Guide</h2>
-          <p class="lead mb-0">Hear all the new stories of the week circulating around wherever you may be</p>
-          <button type="button" class="btn btn-primary" id="listen-again">Listen Again</button>
+      <?php endwhile;?>
 
-        </div>
-      </div>
-      </div>
+    </div>
 
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img3" ></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        <div class="container">
-          <h2>Superbowl LV</h2>
-          <p class="lead mb-0">See our predictions heading into Superbowl weekend!</p>
-          <button type="button" class="btn btn-primary" id="listen-again">Listen Again</button>
-
-        </div>
+      <?php endif;?>
       </div>
 </div>
-    </div>
+</div>
+ 
+</div>
   </section>
   
 

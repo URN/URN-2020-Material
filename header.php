@@ -2,34 +2,27 @@
 <html lang="en">
 
 <head>
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
+
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="University Radio Nottingham is the multi-award–winning university radio station of the University of Nottingham Students’ Union.">
+  <meta name="description" content="">
   <meta name="author" content="">
-  <title>URN MAIN SITE</title>
 
+  <title>Landing Page - Start Bootstrap Theme</title>
 
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/scss/urnportal.scss' ?>">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
+  <!-- Bootstrap core CSS -->
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/bootstrap/css/bootstrap.min.css'?> ">
 
+  <!-- Custom fonts for this template -->
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/simple-line-icons/css/simple-line-icons.css'?>">
+  <link  rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="<?php echo get_template_directory_uri(). '/vendor/jquery/jquery.min.js' ?>"></script>
-  <script src="<?php echo get_template_directory_uri(). '/vendor/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>
-  <!-- Core plugin JavaScript-->
-  <script src="<?php echo get_template_directory_uri(). '/vendor/jquery-easing/jquery.easing.min.js' ?>"></script>
-      <!-- Custom scripts for all pages-->
-  <script src="<?php echo get_template_directory_uri(). '/js/urnportal.js' ?>"></script>
-
+  <!-- Custom styles for this template -->
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
 
 </head>
+
 
 <div class="header-background">
   
