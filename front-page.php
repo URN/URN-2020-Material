@@ -29,7 +29,7 @@
 <body>
 
   <!-- Masthead -->
-  <header class="masthead text-white text-center">
+  <header class="masthead text-white text-center" id="header-masthead">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -248,26 +248,37 @@
 
       <?php if(has_post_thumbnail()):?>
       <a href="<?php the_permalink();?>">
+      <div class="container">
+      <div class="text-center">
         <img src="<?php the_post_thumbnail_url('thumb_image');?>" class= "img-fluid mb-2" alt="<?php the_title();?>">
         </a>
+        </div>
         <?php endif?>
 
       <a href="<?php the_permalink();?>">
         <h1 class="post_title"><?php the_title();?> </h1>
         </a>
         <h4 class="post_excerpt"><?php the_excerpt();?></h4>
-        </div>
+        </div></div>
 
       <?php endwhile;?>
 
     </div>
 
-      <?php endif;?>
       </div>
+
 </div>
+
+<div class="text-center">
+<a class="but" href="<?php echo site_url('/culture'); ?>">
+    <h4 class="read-more"> Read More</h4>
+<i class="fas fa-angle-double-down  fa-3x"  id = "see-more-btn"></i>
+</div>
+</a>
 </div>
  
 </div>
+
   </section>
   
 
@@ -302,7 +313,17 @@
         </div>
       </div>
     </div>
+  
+    <a class="but" href="<?php echo site_url('/get-involved'); ?>">
+    <h4 class="read-more"> Read More</h4>
+<i class="fas fa-angle-double-down  fa-3x"  id = "see-more-btn"></i>
+</a>
   </section>
+  <?php get_footer(); ?> 
+
+
+      <?php endif;?>
+
 
   <!-- Call to Action -->
     <!-- 
@@ -329,53 +350,5 @@
     </div>
   </section>
 -->
-  <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2020. All Rights Reserved.</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
 
-</footer>
-
-<?php get_footer(); ?> 

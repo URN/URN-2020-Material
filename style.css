@@ -99,13 +99,97 @@ border-width: 1px;*/
   }
   
   .footer .head-menu-text {
-      text-align: left;
+      text-align: center;
       list-style-type: none;
-      /*  margin: -4rem -0.4rem;*/
-      font-size: 0.8rem;
-      padding-top: 4rem;
-      padding-right: 2rem;
+      margin: 0;
+      font-size: 18px;
+      padding: 0.1px 1px;
       overflow: hidden;
+  }
+  
+  .blockquote-custom {
+      position: relative;
+      font-size: 1.1rem;
+  }
+  
+  .blockquote-custom-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #5F2A87;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -25px;
+      left: 50px;
+  }
+  
+  #header-masthead {
+      position: relative;
+      background-color: #343a40;
+      background: url(DJ_SLOGAN.png) no-repeat center center;
+      background-size: cover;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+  }
+  
+  #quote-masthead {
+      position: relative;
+      background-color: #343a40;
+      background: url(Holly.JPG) no-repeat center center;
+      background-size: cover;
+      height: 2rem;
+  }
+  
+  #header-masthead .overlay {
+      position: absolute;
+      background-color: #212529;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+  }
+  
+  #quote-masthead .overlay {
+      position: absolute;
+      background-color: #212529;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+  }
+  
+  #header-masthead h1 {
+      font-size: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+      #header-masthead {
+          padding-top: 12rem;
+          padding-bottom: 12rem;
+      }
+      #header-masthead h1 {
+          font-size: 3rem;
+      }
+      #quote-masthead {
+          padding-top: 4rem;
+          padding-bottom: 5rem;
+          height: 30rem;
+      }
+      #quote-masthead h1 {
+          font-size: 3rem;
+      }
+  }
+  
+  .blockquote {
+      color: black;
+  }
+  
+  .text-quote {
+      color: #5F2A87;
   }
   
   body {
@@ -689,14 +773,25 @@ display: flex;
       padding-left: 1rem;
   }
   
+  .post_title:hover {
+      color: #e415c8;
+  }
+  
   .post_excerpt {
       color: rgb(189, 189, 189);
       font-size: 1.1rem;
       padding-left: 1rem;
-      padding-bottom: 1rem;
   }
   
-  .showcase-img1 {
+  .read-more {
+      padding-top: 2rem;
+      font-family: milocha;
+  }
+  
+  #see-more-btn {
+      padding-bottom: 0.5rem;
+  }
+  /*.showcase-img1 {
       background: url(img/blm.webp);
       background-size: cover;
       background-repeat: no-repeat;
@@ -718,52 +813,29 @@ display: flex;
       background-repeat: no-repeat;
       background-position: center;
   }
+  */
   
-  .btn {
+  .involved-img {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .involved-box {
+      height: 100px;
+  }
+  
+  .lead .btn {
       width: 8rem;
       background-color: #00d351 !important;
       color: #000000 !important;
       /* color: #000000;*/
   }
   
-  .btn:hover {
+  .lead .btn:hover {
       width: 8rem;
       color: #000000 !important;
       background-color: #eeeeee !important;
       /* color: #000000;*/
-  }
-  
-  header.masthead {
-      position: relative;
-      background-color: #343a40;
-      background: url(DJ_SLOGAN.png) no-repeat center center;
-      background-size: cover;
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-  }
-  
-  header.masthead .overlay {
-      position: absolute;
-      background-color: #212529;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0.3;
-  }
-  
-  header.masthead h1 {
-      font-size: 2rem;
-  }
-  
-  @media (min-width: 768px) {
-      header.masthead {
-          padding-top: 12rem;
-          padding-bottom: 12rem;
-      }
-      header.masthead h1 {
-          font-size: 3rem;
-      }
   }
   
   .showcase .showcase-text {
@@ -780,6 +852,7 @@ display: flex;
   
   @media (min-width: 768px) {
       .showcase .showcase-text {
+          height: 20rem;
           padding: 5rem;
       }
   }

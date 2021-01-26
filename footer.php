@@ -12,8 +12,48 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/scss/urnportal.scss' ?>">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
 </head>   
-   
-   <footer class="footer">
+     <!-- Footer -->
+  <footer class="footer ">
+  <div class="row justify-content-center">
+
+
+<nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <a class="navbar-brand" href="#"></a>
+        <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'header-menu',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav justify-content-center',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+        ) );
+        ?>
+    </div>
+</nav>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<footer class="footer">
           <div class="row">
               <div class="col-3">
               </div>
@@ -56,30 +96,10 @@
           </div>
           <div class="container">
 
-<nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->
+<nav class="navbar navbar-expand-xl navbar-light " role="navigation"> --><!-- might change to lg if it looks better --><!-- 
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+     Brand and toggle get grouped for better mobile display -->
     
-    <a class="navbar-brand" href="#"></a>
-        <?php
-        wp_nav_menu( array(
-            'theme_location'    => 'footer-menu',
-            'depth'             => 2,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav justify-content-center',
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker(),
-        ) );
-        ?>
-    </div>
-</nav>
 
-      </div>
-    </footer>
 </body>
 </html>
