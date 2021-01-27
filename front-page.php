@@ -234,7 +234,9 @@
     $args = array(
 
         'post_type' => 'post',
-        'posts_per_page' => 3
+        'posts_per_page' => 3,
+        'category_name' => 'Article'
+
 
     );
     $_posts = new WP_Query($args);
