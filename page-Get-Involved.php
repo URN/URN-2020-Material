@@ -90,6 +90,7 @@
   <?php endwhile; else: endif;?>
     <div class="container-fluid p-0">
       <div class="row no-gutters" id="involved-box">
+<!-- Music section-->
 
         <div class="col-lg-6 order-lg-2 text-white showcase-img1" >   
                   <?php if(has_post_thumbnail(110)):?>
@@ -103,9 +104,7 @@
 
 
 
-
-          <h2>     <?php echo get_the_title(110);?>
-          </h2>
+          <h2>     <?php echo get_the_title(110);?>         </h2>
           <p class="lead mb-0">     <?php echo get_the_excerpt(110);?>
 </p>          <div class="involved-btn">
 
@@ -115,6 +114,8 @@
         </div>
 
       </div>
+      <!-- Host a show section-->
+
       <div class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img2">
         <?php if(has_post_thumbnail(114)):?>
@@ -129,7 +130,7 @@
           <p class="lead mb-0">   <?php echo get_the_excerpt(114);?></p>
           <div class="involved-btn">
 
-          <button type="button" class="btn btn-primary" id="listen-again">Learn More</button>
+         <a href="<?php echo site_url('/host-a-show'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
         </div>
         </div>
       </div>
@@ -143,6 +144,8 @@
                    </a>
                   <?php endif?> 
         </div>
+        <!-- Tech section-->
+
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
         <div class="container">
           <h2><?php echo get_the_title(117);?></h2>
@@ -157,8 +160,15 @@
     </div>
   </section>
 
-  <section>
-General Inquieries 
+  <section class="involved-foot">
+    <div class="card text-center">
+
+    <div class="card-body">
+      <h5 class="card-title">  <h5 class="entry-title"> General Inquiries <h5></h5>
+      <p class="card-text">For any additional queries, get in touch at      <a href="#" >management@urn1350.net</a> </p>
+    </div>
+
+    </div>
 
         </section>
 

@@ -29,10 +29,42 @@
   <div class="container">
 
     <div class="row justify-content-center">
-      
       <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?>
-      <h1 class="website-name">University Radio Nottingham</h1>
+      <h1 class="website-name">University Radio Nottingham</h1> 
+
     </div>
+    <div class="listen-live-top">
+    <a class="nav-link btn btn-sm btn-primary" onclick="togglePlay()">
+    <i class="fas fa-fw fa-play" id="livebutton"></i>
+      <span class="listen-live">Listen Live!</span></a>
+  </li>
+  </div>
+
+    <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
+
+<script>
+  var myAudio = document.getElementById("urnlive");
+  var isPlaying = false;
+
+  function togglePlay() {
+    if (isPlaying) {
+      myAudio.pause()
+      $('#livebutton').removeClass('fa-pause');
+      $('#livebutton').addClass('fa-play');
+    } else {
+      myAudio.play();
+      $('#livebutton').removeClass('fa-play');
+      $('#livebutton').addClass('fa-pause');
+    }
+  };
+  myAudio.onplaying = function() {
+    isPlaying = true;
+  };
+  myAudio.onpause = function() {
+    isPlaying = false;
+  };
+</script>
+
   </div>
   <!-- 
   <div class="row">
@@ -72,36 +104,6 @@
     </div>
 </nav>
 
-<audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
-
-<script>
-  var myAudio = document.getElementById("urnlive");
-  var isPlaying = false;
-
-  function togglePlay() {
-    if (isPlaying) {
-      myAudio.pause()
-      $('#livebutton').removeClass('fa-pause');
-      $('#livebutton').addClass('fa-play');
-    } else {
-      myAudio.play();
-      $('#livebutton').removeClass('fa-play');
-      $('#livebutton').addClass('fa-pause');
-    }
-  };
-  myAudio.onplaying = function() {
-    isPlaying = true;
-  };
-  myAudio.onpause = function() {
-    isPlaying = false;
-  };
-</script>
-
-  <li class="nav-item">
-    <a class="nav-link btn btn-sm btn-primary" onclick="togglePlay()">
-    <i class="fas fa-fw fa-play" id="livebutton"></i>
-      <span class="listen-live">Listen Live!</span></a>
-  </li>
         </div>
 </div>
 </div>
