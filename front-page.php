@@ -20,7 +20,8 @@
   <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
   <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/simple-line-icons/css/simple-line-icons.css'?>">
   <link  rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
   <!-- Custom styles for this template -->
   <link  rel="stylesheet" type="text/css"  href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
 
@@ -28,7 +29,7 @@
 
 <body>
 
-  <!-- Masthead -->
+  <!-- Masthead 
   <header class="masthead text-white text-center" id="header-masthead">
     <div class="overlay"></div>
     <div class="container">
@@ -38,7 +39,6 @@
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
 
-        <!-- 
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
@@ -49,133 +49,96 @@
               </div>
             </div>
           </form>
-          -->
         </div>
       </div>
     </div>
-  </header>
-  <div class="row justify-content-center">
+  </header>-->
 
-          <h1 class="entry-title">LIVE ON AIR</h1>
+<div id="hero">
+  <video loop muted autoplay poster="">
+    <source src="<?php echo get_template_directory_uri(); ?>/img/video.mp4" alt="" type="video/mp4"></source>
+ </video>
+
+ <div class="content ">
+  <div class="container">
+   <div class="card mx-auto " style="max-width: 840px;" id= "now-playing-full-card">
+      <div class="row no-gutters">
+        <div class="col-md-8">
+          <div class="card-body " id="now-playing-card-body">
+            <h5 class="card-title text-center" id="now-playing-upnext-title">NOW PLAYING</h5>
+            <p class="card-text text-center" id="Show-name">The URN Show - Kathryn Embree</p>
+            <p class="card-text" ><div class="text-muted"id="Show-time">11am-12am</div></p>
+            <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <img src="<?php echo get_template_directory_uri(); ?>/Holly.JPG" alt=""  class="card-img" alt="..." id="imgSUCK">
+          <div class="card-img-overlay">
+            <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
+              <script>
+                var myAudio = document.getElementById("urnlive");
+                var isPlaying = false;
+
+                function togglePlay() {
+                  if (isPlaying) {
+                    myAudio.pause()
+                    $('#livebutton').removeClass('fa-pause');
+                    $('#livebutton').addClass('fa-play');
+                  } else {
+                    myAudio.play();
+                    $('#livebutton').removeClass('fa-play');
+                    $('#livebutton').addClass('fa-pause');
+                  }
+                };
+                myAudio.onplaying = function() {
+                  isPlaying = true;
+                };
+                myAudio.onpause = function() {
+                  isPlaying = false;
+                };
+              </script>
+           <!-- <a class="but" onclick="togglePlay()">
+              <i class="fas fa-fw fa-play  fa-10x" onclick="togglePlay() "id="livebutton2"></i>
+            </a>-->
+            <a class="but2"onclick="togglePlay()">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/urnwhite.png" alt=""  class="card-img" alt="..." id="imgCOCK">
+            </a>
+          </div>
       </div>
-    
+    </div>
   </div>
+ </div> 
+</div>
 
-<div class="main-content">
-  <div class="row">
-    <div class="col-md-8">
-      <div class="box-container-nowplaying">
-        <div class="box1-content content">
-          <div class="container-sm">
-            <h1 class="display-4">NOW PLAYING</h1>
-              <div class="row">
-                <div class="col">
-                  <div class="text-left">The URN Show - Kathryn Embree 
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="text-left">11am-12am
-                  </div>
-                </div>
-              </div>
-              <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
-          </div>  
+<div class="container">
+  <div class="card mx-auto " style="max-width: 740px;" id= "up-next-full-card">
+    <div class="row no-gutters">
+      <div class="col-md-8">
+        <div class="card-body " id="card-body-card-body">
+          <h5 class="card-title text-center" id="now-playing-upnext-title">UP NEXT</h5>
+          <p class="card-text text-center" id="Show-name2">URN Lockdown - Flora Wordie </p>
         </div>
-      <div class="box1-side">
-      <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
-
-<script>
-  var myAudio = document.getElementById("urnlive");
-  var isPlaying = false;
-
-  function togglePlay() {
-    if (isPlaying) {
-      myAudio.pause()
-      $('#livebutton').removeClass('fa-pause');
-      $('#livebutton').addClass('fa-play');
-    } else {
-      myAudio.play();
-      $('#livebutton').removeClass('fa-play');
-      $('#livebutton').addClass('fa-pause');
-    }
-  };
-  myAudio.onplaying = function() {
-    isPlaying = true;
-  };
-  myAudio.onpause = function() {
-    isPlaying = false;
-  };
-</script>
-       <!-- <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG">-->
-       <li class="nav-item">
-
-        <a class="but" onclick="togglePlay()">
-    <i class="fas fa-fw fa-play  fa-10x" onclick="togglePlay() "id="livebutton2"></i>
-</a>
-</li>
-        <!--<img class="play" src="<?php echo get_template_directory_uri(); ?>/play2.png">-->
-
-
       </div>
-    </div>
-    <div class="box-container-upnext">
-      <div class="box1-content content">  
-        <div class="container">
-          <div class="display-4"> UP NEXT
+      <div class="col-md-4" id="up-next-sec-2">
+        <div class="row">
+          <div class="col-11.8">
+            <div class="text-center" id="remind">
+              <a  id="up-next-sec-2-link" href="<?php echo site_url('/schedule'); ?>">  Set Reminder </a>
             </div>
-              <div class="row">
-                <div class="col">
-                  <div class="text-left">URN Lockdown - Flora Wordie 
-                  </div>
+              <div class="divider">
+                <div class="text-center">
+                  <a  id="up-next-sec-2-link" href="<?php echo site_url('/schedule'); ?>"> Full Schedule </a>
                 </div>
               </div>
-            <div class="row">
-                <div class="col">
-                  <div class="text-left">11am-12am</div>
-                </div>
-            </div>
-          <!--  <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button> -->
-        </div>  <!-- Div for container class-->
-      </div>
-      <div class="row">
-        <div class="col-11.8">
-          <div class="box1-side">
-            <div class="text-center">
-              Set Reminder
-            </div>
-          <div class="divider">
-            <div class="text-center">
-              Full Schedule
             </div>
           </div>
-          <!-- <img class="Kath" src="<?php echo get_template_directory_uri(); ?>/Holly.JPG"> -->
-        </div>
+        </div> 
       </div>
     </div>
-
-    <!--  <div class="row">
-      <div class="col-0.2">
-        <div class="fullSchedule">
-          <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
-        </div>
-      </div>
-      </div>-->
-
-     <div class="col-3">
-      <button type="button" class="btn btn-primary">Block level button</button>
-      <!--    <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> Shows of the Month  </a> </button>-->
-      </div>
-
   </div>
+              </div>
   
-</div>
 
-
-
-</div>
-</div> <!-- div for all content that has white background-->
 
     <!-- ⟶ -->
 

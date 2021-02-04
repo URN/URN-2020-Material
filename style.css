@@ -166,6 +166,151 @@ border-width: 1px;*/
       overflow: hidden;
   }
   
+  #hero {
+      position: relative;
+  }
+  
+  #hero video {
+      height: 100vh;
+      width: 100%;
+      background-position: absolute;
+      z-index: 10;
+      object-fit: cover;
+      /* https://www.youtube.com/watch?v=VpFTj3Q7DVM go to here if doesnt work in IE*/
+  }
+  
+  #hero .content {
+      /*background: rgba(214, 192, 192, 0.5);*/
+      height: 100%;
+      width: 100%;
+      z-index: 20;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  #hero #now-playing-full-card {
+      z-index: 30;
+      margin-left: 20rem;
+      margin-top: 10rem;
+      /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
+      -webkit-box-flex: 2;
+      flex: 2;
+      border-radius: 1rem;
+      outline: none;
+      /*9ecaed is nice blue*/
+      border-radius: 2rem 2rem 2rem 2rem;
+      border-color: #5F2A87;
+      color: #00d351;
+      box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #763fa393;
+      font-family: 'milocha', 'Lato';
+      margin-right: 16rem;
+  }
+  
+  #hero #up-next-full-card {
+      z-index: 25;
+      margin-left: 40rem;
+      margin-top: -7.22rem;
+      /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
+      -webkit-box-flex: 2;
+      flex: 2;
+      outline: none;
+      /*9ecaed is nice blue*/
+      border-color: #5F2A87;
+      color: #00d351;
+      font-family: 'milocha', 'Lato';
+      margin-right: 16rem;
+      max-height: 6.89rem;
+  }
+  
+  #hero #now-playing-card-body {
+      color: rgb(255, 255, 255);
+      background-color: #5f2a87c2;
+      border-radius: 2rem 0 0 2rem;
+      height: 14rem;
+  }
+  
+  #hero #card-body-card-body {
+      color: rgb(255, 255, 255);
+      background-color: #9225a8c2;
+      height: 6.89rem;
+      border-radius: 2rem 0 0 0;
+  }
+  
+  #imgSUCK {
+      height: 100%;
+      width: 100%;
+      border-radius: 0 2rem 2rem 0;
+  }
+  
+  #imgCOCK {
+      height: 75%;
+      width: 60%;
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 0 2rem 2rem 0;
+  }
+  
+  #now-playing-upnext-title {
+      font-family: 'Quicksand', sans-serif !important;
+  }
+  
+  #Show-name {
+      font-family: 'Quicksand', sans-serif !important;
+      font-size: 2rem;
+  }
+  
+  #Show-name2 {
+      font-family: 'Quicksand', sans-serif !important;
+      font-size: 1.3rem;
+  }
+  
+  #Show-time {
+      font-family: 'Quicksand', sans-serif !important;
+      font-size: 1.4rem;
+  }
+  
+  .presenter-link {
+      font-family: 'Quicksand', sans-serif !important;
+  }
+  
+  .right-button .presenter-link {
+      color: black;
+  }
+  
+  .right-button .presenter-link:hover {
+      color: #5F2A87;
+  }
+  
+  .card-title {
+      color: #ffffff;
+      font-size: 1.8rem;
+      font-family: 'Lato' !important;
+  }
+  
+  #up-next-sec-2 {
+      font-family: 'Quicksand', sans-serif !important;
+      color: #00d351;
+      font-size: 2rem;
+      padding-left: 2.7rem;
+      background-color: #9225a8c2;
+      border-radius: 0 2rem 0 0;
+  }
+  
+  #up-next-sec-2-link {
+      font-family: 'Quicksand', sans-serif !important;
+      color: #00d351;
+  }
+  
+  #remind {
+      padding-top: 0.5rem;
+  }
+  
+  .divider {
+      border-top: 1px solid rgb(252, 252, 252);
+      border-radius: 0px;
+  }
+  
   .blockquote-custom {
       position: relative;
       font-size: 1.1rem;
@@ -195,7 +340,7 @@ border-width: 1px;*/
   #header-masthead {
       position: relative;
       background-color: #343a40;
-      background: url(DJ_SLOGAN.png) no-repeat center center;
+      /* background: url(DJ_SLOGAN.png) no-repeat center center;*/
       background-size: cover;
       padding-top: 8rem;
       padding-bottom: 8rem;
@@ -336,6 +481,16 @@ display: flex;
   }
   
   .box-container-nowplaying .right-button {
+      background: #dbdbdb;
+      /*#26553a is nice green*/
+      border-radius: 0.5rem;
+      border: none;
+      box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);
+      color: white;
+      width: 40%;
+  }
+  
+  .right-button {
       background: #dbdbdb;
       /*#26553a is nice green*/
       border-radius: 0.5rem;
@@ -850,10 +1005,12 @@ display: flex;
   .read-more {
       padding-top: 2rem;
       font-family: milocha;
+      color: #00d351;
   }
   
   #see-more-btn {
       padding-bottom: 0.5rem;
+      color: #00d351;
   }
   /*.showcase-img1 {
       background: url(img/blm.webp);
@@ -903,7 +1060,7 @@ display: flex;
   }
   
   .involved-btn {
-      padding-top: 2rem;
+      padding-top: 3rem;
   }
   
   .showcase .showcase-text {
@@ -1020,7 +1177,7 @@ display: flex;
   
   .testimonials {
       padding-top: 1rem;
-      padding-bottom: 7rem;
+      padding-bottom: 2rem;
   }
   
   .testimonials .testimonial-item {
