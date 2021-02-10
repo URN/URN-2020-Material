@@ -16,14 +16,15 @@
   <footer class="footer ">
   <div class="row justify-content-center">
 
+    <!--
 
-<nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->
+<nav class="navbar navbar-expand-xl navbar-light " role="navigation">--> <!-- might change to lg if it looks better -->
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+        <!--
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>
     </button>
-    
     <a class="navbar-brand" href="#"></a>
         <?php
         wp_nav_menu( array(
@@ -36,9 +37,12 @@
             'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
-        ?>
+        ?>-->
+
     </div>
 </nav>
+        </div>
+<p class="foot-text text-right">Website created by <a href="https://www.linkedin.com/in/dermot-newton-9469281a1/" class="foot-text">Dermot Newton</a></p>
 
 </footer>
 

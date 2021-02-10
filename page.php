@@ -54,8 +54,7 @@
            
              
                 </header>
-                <div class="entry-content">
-                <div class="text-center"> <!-- CHANGE THIS FOR TEXT ALLIGNMENT-->
+               <!-- <div class="text-left"> CHANGE THIS FOR TEXT ALLIGNMENT-->
 
                     <?php the_content(); ?>
                     <?php

@@ -16,6 +16,7 @@
   
   body {
       font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      overflow-x: hidden;
   }
   
   .title-logo {
@@ -55,13 +56,13 @@
   .header .navbar {
       background-color: #5F2A87;
       /*height: 35px; NEVER PUTHIEGHT HERE BECAUSE DROP DOWN STOPS WORKING*/
-      font-family: 'milocha', 'Lato';
+      font-family: 'Quicksand', 'milocha', 'Lato';
   }
   
   .footer .navbar {
       background-color: #5F2A87;
       /*height: 35px; NEVER PUTHIEGHT HERE BECAUSE DROP DOWN STOPS WORKING*/
-      font-family: 'Lato';
+      font-family: 'Quicksand', 'milocha', 'Lato';
   }
   
   .header-background {
@@ -119,21 +120,15 @@ border-width: 1px;*/
       border: 0;
       text-decoration: underline;
   }
-  /* Highlight using list element */
+  /* Highlight using list element 
   
-  li.current_page_item {
-      background: #00d351;
+   li.current_page_item {
+      background: #9225a8;
       color: #fff;
-      /*border-radius: 5px;*/
+      border-radius: 5px;
       text-decoration: underline;
-  }
+  }*/
   /* Highlight using link element */
-  
-  li.current_page_item a {
-      text-decoration: underline;
-      background: #00d351;
-      /* border-radius: 3px;*/
-  }
   
   .footer .navbar a {
       color: rgb(146, 146, 146);
@@ -1049,13 +1044,15 @@ display: flex;
       width: 8rem;
       background-color: #00d351 !important;
       color: #000000 !important;
+      border: none !important;
       /* color: #000000;*/
   }
   
   .btn:hover {
       width: 8rem;
-      color: #000000 !important;
-      background-color: #eeeeee !important;
+      color: #eeeeee !important;
+      background-color: #9225a8 !important;
+      border: none !important;
       /* color: #000000;*/
   }
   
@@ -1121,6 +1118,7 @@ display: flex;
   
   .wal2 {
       position: absolute;
+      font-size: 1.2rem;
       padding: 1rem 1rem;
       /* padding-left: 1.1rem;
     padding-right: 1.8rem;
@@ -1132,14 +1130,33 @@ display: flex;
       z-index: 3;
   }
   
+  .wal3 {
+      position: absolute;
+      padding: 1rem 1rem;
+      /* padding-left: 1.1rem;
+  padding-right: 1.8rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;*/
+      width: 10rem;
+      background-color: #00d351;
+      border-radius: 1rem;
+      z-index: 3;
+  }
+  
   @media (min-width: 1280px) {
       .wal2 {
+          margin-left: 49rem;
+      }
+      .wal3 {
           margin-left: 49rem;
       }
   }
   
   @media (max-width: 1270px) {
       .wal2 {
+          margin-left: 0rem;
+      }
+      .wal3 {
           margin-left: 0rem;
       }
   }
@@ -1152,6 +1169,11 @@ display: flex;
       border-radius: 1rem;
       width: 100%;
       color: white;
+  }
+  
+  .foot-text {
+      color: rgb(172, 172, 172);
+      padding-top: 0.5rem;
   }
   
   .features-icons {
