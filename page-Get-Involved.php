@@ -93,9 +93,9 @@
 <!-- Music section-->
 
         <div class="col-lg-6 order-lg-2 text-white showcase-img1" >   
-                  <?php if(has_post_thumbnail(110)):?>
+                  <?php if(has_post_thumbnail( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ) )):?>
                   <a href="<?php the_permalink();?>">
-                     <img src="<?php echo get_the_post_thumbnail_url(110, 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(110);?>">
+                     <img src="<?php echo get_the_post_thumbnail_url( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>">
                    </a>
                   <?php endif?> 
 </div>
@@ -104,8 +104,8 @@
 
 
 
-          <h2>     <?php echo get_the_title(110);?>         </h2>
-          <p class="lead mb-0">     <?php echo get_the_excerpt(110);?>
+          <h2>     <?php echo get_the_title( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>         </h2>
+          <p class="lead mb-0">     <?php echo get_the_excerpt( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>
 </p>          <div class="involved-btn">
 
           <button type="button" class="btn btn-primary" id="listen-again">Learn More</button>
@@ -118,16 +118,16 @@
 
       <div class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img2">
-        <?php if(has_post_thumbnail(114)):?>
+        <?php if(has_post_thumbnail(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ))):?>
                   <a href="<?php the_permalink();?>">
-                     <img src="<?php echo get_the_post_thumbnail_url(114, 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(110);?>">
+                     <img src="<?php echo get_the_post_thumbnail_url(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ));?>">
                    </a>
                   <?php endif?> 
         </div>
         <div class="col-lg-6 my-auto showcase-text">
         <div class="container">
-              <h2>     <?php echo get_the_title(114);?></h2>
-          <p class="lead mb-0">   <?php echo get_the_excerpt(114);?></p>
+              <h2>     <?php echo get_the_title(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ));?></h2>
+          <p class="lead mb-0">   <?php echo get_the_excerpt(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ) );?></p>
           <div class="involved-btn">
 
          <a href="<?php echo site_url('/host-a-show'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
@@ -138,9 +138,9 @@
 
       <div class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img3" >
-        <?php if(has_post_thumbnail(114)):?>
+        <?php if(has_post_thumbnail(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ))):?>
                   <a href="<?php the_permalink();?>">
-                     <img src="<?php echo get_the_post_thumbnail_url(117, 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(110);?>">
+                     <img src="<?php echo get_the_post_thumbnail_url(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?>">
                    </a>
                   <?php endif?> 
         </div>
@@ -148,8 +148,8 @@
 
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
         <div class="container">
-          <h2><?php echo get_the_title(117);?></h2>
-          <p class="lead mb-0"><?php echo get_the_excerpt(117);?></p>
+          <h2><?php echo get_the_title(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></h2>
+          <p class="lead mb-0"><?php echo get_the_excerpt(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></p>
           <div class="involved-btn">
           <button type="button" class="btn btn-primary" id="listen-again">Learn More</button>
           </div>

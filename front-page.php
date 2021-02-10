@@ -72,7 +72,7 @@
           </div>
         </div>
       <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/Holly.JPG" alt=""  class="card-img" alt="..." id="imgSUCK">
+        <img src="<?php echo get_template_directory_uri(); ?>/Holly.JPG" alt=""  class="card-img" alt="..." id="presenterIMG">
           <div class="card-img-overlay">
             <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
               <script>
@@ -101,7 +101,7 @@
               <i class="fas fa-fw fa-play  fa-10x" onclick="togglePlay() "id="livebutton2"></i>
             </a>-->
             <a class="but2"onclick="togglePlay()">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/urnwhite.png" alt=""  class="card-img" alt="..." id="imgCOCK">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/urnwhite.png" alt=""  class="card-img" alt="..." id="PlayURN">
             </a>
           </div>
       </div>
