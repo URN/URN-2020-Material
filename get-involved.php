@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+/**
+* Template Name: get-involved
+* Description: Displays get involved
+*/
+get_header(); ?>
 
 <head>
 
