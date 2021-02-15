@@ -27,4 +27,5 @@ add_image_size('thumb_image', 500, 250, true);
 add_theme_support( 'post-thumbnails', array( 'post', 'product' ) );
 
 
+
 ?>
