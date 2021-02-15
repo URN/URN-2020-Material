@@ -1,4 +1,7 @@
-# https://askubuntu.com/questions/574870/wordpress-cant-upload-files use for changing media permissions
+### https://askubuntu.com/questions/574870/wordpress-cant-upload-files use for changing media permissions
+
+### https://www.youtube.com/watch?v=hPuB_yXfbK0 and https://www.smashingmagazine.com/2014/05/proper-wordpress-filesystem-permissions-ownerships/ for changing file permissions for wordpress server
+
 
 
 # [Start Bootstrap - Landing Page](https://startbootstrap.com/theme/landing-page/)
