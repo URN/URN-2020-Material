@@ -4,6 +4,21 @@
 /**
  * Register Custom Navigation Walker
  */
+
+
+
+function urn_material_scripts() {
+    // Load our main stylesheet.
+    wp_enqueue_style('main-style', get_stylesheet_uri());
+
+  
+}
+add_action( 'wp_enqueue_scripts', 'urn_material_scripts' );
+    
+    
+
+
+
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
@@ -27,5 +42,16 @@ add_image_size('thumb_image', 500, 250, true);
 add_theme_support( 'post-thumbnails', array( 'post', 'product' ) );
 
 
+
+/**
+ * Shows our stylings inside of the Wordpress Post Editor (when writing a new post)
+ *
+ * Styles defined in editor-style.css
+*/
+
+add_theme_support('editor-styles');
+add_editor_style( 'style-editor.css' );
+
+show_admin_bar( true);
 
 ?>

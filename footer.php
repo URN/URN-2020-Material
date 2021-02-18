@@ -103,7 +103,7 @@
 <nav class="navbar navbar-expand-xl navbar-light " role="navigation"> --><!-- might change to lg if it looks better --><!-- 
   <div class="container">
      Brand and toggle get grouped for better mobile display -->
-    
+    <?php wp_footer()?>
 
 </body>
 </html>

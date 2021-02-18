@@ -26,7 +26,6 @@
   <link  rel="stylesheet" type="text/css"  href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
 
 </head>
-
 <body>
 
   <!-- Masthead 

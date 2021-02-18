@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+/**
+* Template Name: your-news
+* Description: Displays all posts
+*/
+get_header(); ?>
 
 <head>
 
@@ -16,85 +21,143 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
 </head>
 
-YOURNEWS
-<div class="main-page-content">
-<?php
-                // Start the loop.                </div>
-                while ( have_posts() ) : the_post();
+  <!-- Page Content -->
+  
+<?php if(have_posts()) : while(have_posts()) : the_post();?>
+  <?php endwhile; else: endif;?>
 
-                    // Include the page content template.
-                
+  <?php
+    $args = array(
 
-            ?> 
-            <div class="row">
-                <div class="col">
-
-                <?php 
-      $user = wp_get_current_user();
-      if ( in_array( 'Administrator', $user->roles ) ) { ?>
-          <!-- Any HTML what you need to hide from "Customers" and show for "Vendor" -->
-      	<div>
-      	  <?php edit_post_link(__('Edit Page')); ?>
-    	</div>
-      <?php  } ?>
-
-            <article id="post-<?php the_ID();?>" <?php post_class();?>>
-                <header class="entry-header">
-                 
-                        <?php the_title('    <div class="text-center"> <h1 class="entry-title">','</h1> </div>');?>
-                    </div>
-            </div>
-    <div class="entry-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-1">      
-                </div>
-                <div class="col-sm-10">      
-                    
-           
-             
-                </header>
-               <!-- <div class="text-left"> CHANGE THIS FOR TEXT ALLIGNMENT-->
-
-                    <?php the_content(); ?>
-                    <?php
-                        wp_link_pages( array(
-                            'before' => '<div class="page-links">' . esc_html__('Pages:', 'URN-2020Redesign' ),
-                            'after' => '</div',
-                        ));
-                    ?>   
-                </div>
-                <footer class="entry-footer">
-                    <?php
-                        edit_post_link(
-                            sprintf(
-                                esc_html__('Edit %s', 'URN-2020Redesign'),
-                                the_title('<span class="screen-reader-text">"','"
-                                </span>', false)
-                            ),
-                            '<span class="edit-link">',
-                            '</span>'
-                        );
-                    ?>
+        'post_type' => 'post',
+        'category_name' => 'Article'
 
 
+    );
+    $_posts = new WP_Query($args);
+    ?>
 
-                    
-                </footer>
-            </article>
-            <?php    // End the loop.
-                endwhile;
-            ?>
-            </div>
-                <div class="col-sm-1">      
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-section2">
+
+      
+
+<div class="row justify-content-center">
+          <h1 class="entry-title">YOUR NEWS</h1>
+      </div>
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      
+      <div class="col-md-8">
+
+        <h1 class="my-4">
+          <small></small>
+        </h1>
+
+        <!-- Blog Post -->
         
-    </div>
-</div>
- <?php get_footer(); ?> 
+  <?php if($_posts->have_posts()):?>
+      <?php while ($_posts->have_posts()): $_posts->the_post();?>
+        <div class="card mb-4">
+        <h1 class="my-4">
+ <?php the_title();?></h1>
+          <img class="card-img-top"src="<?php the_post_thumbnail_url('thumb_image');?>" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title">Post Title</h2>
+            <p class="card-text"><?php the_excerpt()?></p>
+            <a href="<?php the_permalink();?>" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">   Posted on <?php echo get_the_date();?>
+            <a href="#">Written by <?php echo get_the_author(); ?></a>
+          </div>
+        </div>
 
- AllowOverride Limit Options FileInfo
+        <?php endwhile;?>
+
+<?php endif;?>
+      
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget 
+        <div class="card my-4">
+          <h5 class="card-header">Search</h5>
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-append">
+                <button class="btn btn-secondary" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+        </div>-->
+
+        <!-- Categories Widget -->
+        <div class="sticky-top">
+        <div class="card my-4">
+          <h5 class="card-header" id="news-card-title">Check out our Monthly Discounts</h5>
+          <div class="card-body"id="news-card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">Freebies</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">Tutorials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header" id="news-card-title2">Want to write articles?</h5>
+          <div class="card-body" id="news-card-body">
+           <p> You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+  </p> <a href="<?php echo site_url('/host-a-show'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
+
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  
+  <!-- /.container -->
+
+ <?php get_footer(); ?> 

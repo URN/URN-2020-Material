@@ -20,7 +20,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
   <!-- Custom styles for this template -->
-  <link  rel="stylesheet" type="text/css"  href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="<?php echo get_template_directory_uri(). '/vendor/jquery/jquery.min.js' ?>"></script>
+  <script src="<?php echo get_template_directory_uri(). '/vendor/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="<?php echo get_template_directory_uri(). '/vendor/jquery-easing/jquery.easing.min.js' ?>"></script>
+  
+      <!-- Custom scripts for all pages-->
+      <?php wp_head(); ?>
 
 </head>
 
@@ -34,37 +43,35 @@
       <h1 class="website-name">University Radio Nottingham</h1> 
 
     </div>
-    <div class="listen-live-top">
-    <a class="nav-link btn btn-sm btn-primary" onclick="togglePlay()">
-    <i class="fas fa-fw fa-play" id="livebutton"></i>
-      <span class="listen-live">Listen Live!</span></a>
-  </li>
-  </div>
+      <div class="listen-live-top">
+        <a class="nav-link btn btn-sm btn-primary" onclick="togglePlay()" target="_blank">
+          <i class="fas fa-fw fa-play" id="livebutton"></i>
+          <span class="listen-live">Listen Live!</span>
+        </a>
+      </div>      <!-- TODO make a popup radio player like university radio york or insanity radio-->
+        <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none"  ></audio>
+          <script>
+            var myAudio = document.getElementById("urnlive");
+            var isPlaying = false;
 
-    <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
-
-<script>
-  var myAudio = document.getElementById("urnlive");
-  var isPlaying = false;
-
-  function togglePlay() {
-    if (isPlaying) {
-      myAudio.pause()
-      $('#livebutton').removeClass('fa-pause');
-      $('#livebutton').addClass('fa-play');
-    } else {
-      myAudio.play();
-      $('#livebutton').removeClass('fa-play');
-      $('#livebutton').addClass('fa-pause');
-    }
-  };
-  myAudio.onplaying = function() {
-    isPlaying = true;
-  };
-  myAudio.onpause = function() {
-    isPlaying = false;
-  };
-</script>
+            function togglePlay() {
+              if (isPlaying) {
+                myAudio.pause()
+                $('#livebutton').removeClass('fa-pause');
+                $('#livebutton').addClass('fa-play');
+              } else {
+                myAudio.play();
+                $('#livebutton').removeClass('fa-play');
+                $('#livebutton').addClass('fa-pause');
+              }
+            };
+            myAudio.onplaying = function() {
+              isPlaying = true;
+            };
+            myAudio.onpause = function() {
+              isPlaying = false;
+            };
+          </script>
 
   </div>
   <!-- 
@@ -78,40 +85,35 @@
   </div>-->
 
 
-<div class="header">
-<div class="row justify-content-center">
+  <div class="header">
+    <div class="row justify-content-center">
 
 
-<nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <a class="navbar-brand" href="#"></a>
-        <?php
-        wp_nav_menu( array(
-            'theme_location'    => 'header-menu',
-            'depth'             => 2,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav justify-content-center',
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker(),
-        ) );
-        ?>
-    </div>
-</nav>
-
+      <nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <a class="navbar-brand" href="#"></a>
+              <?php
+                wp_nav_menu( array(
+                    'theme_location'    => 'header-menu',
+                    'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'bs-example-navbar-collapse-1',
+                    'menu_class'        => 'nav justify-content-center',
+                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker'            => new WP_Bootstrap_Navwalker(),
+                ) );
+              ?>
         </div>
+      </nav>
+
 </div>
 </div>
 </div>
-
-
-
 
 
 
@@ -162,4 +164,6 @@
     </div>
 
 -->
+
+
 </html>

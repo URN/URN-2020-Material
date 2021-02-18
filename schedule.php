@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+
+/**
+* Template Name: schedule
+* Description: Displays schedule page
+*/
+ get_header(); ?>
 
 <head>
 
@@ -16,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
 </head>
 
-hghghghghghghghghghghghghghghg
+
 <div class="main-page-content">
 <?php
                 // Start the loop.                </div>
@@ -54,8 +60,7 @@ hghghghghghghghghghghghghghghg
            
              
                 </header>
-                <div class="entry-content">
-                <div class="text-center"> <!-- CHANGE THIS FOR TEXT ALLIGNMENT-->
+               <!-- <div class="text-left"> CHANGE THIS FOR TEXT ALLIGNMENT-->
 
                     <?php the_content(); ?>
                     <?php
