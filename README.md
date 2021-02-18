@@ -1,3 +1,8 @@
+### shoulve made a changelog lol
+
+### remeber to have wp_head() and wp()footer in the header and footer files so that the front-end styles can be seen
+
+
 ### https://askubuntu.com/questions/574870/wordpress-cant-upload-files use for changing media permissions
 
 ### https://www.youtube.com/watch?v=hPuB_yXfbK0 and https://www.smashingmagazine.com/2014/05/proper-wordpress-filesystem-permissions-ownerships/ and https://maheshwaghmare.com/how-to-fix-error-to-perform-the-requested-action-wordpress-needs-to-access-your-web-server/  for changing file permissions for wordpress server
