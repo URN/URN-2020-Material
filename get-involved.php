@@ -111,7 +111,7 @@ get_header(); ?>
           <p class="lead mb-0">     <?php echo get_the_excerpt( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>
 </p>          <div class="involved-btn">
 
-          <button type="button" class="btn btn-primary" id="listen-again">Learn More</button>
+<a href="<?php echo site_url('/musicians-and-artists'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
         </div>
                   </div>
         </div>
@@ -154,7 +154,7 @@ get_header(); ?>
           <h2><?php echo get_the_title(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></h2>
           <p class="lead mb-0"><?php echo get_the_excerpt(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></p>
           <div class="involved-btn">
-          <button type="button" class="btn btn-primary" id="listen-again">Learn More</button>
+          <a href="<?php echo site_url('/tech-team'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
           </div>
 
         </div>

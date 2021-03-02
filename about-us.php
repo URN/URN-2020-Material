@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+/**
+* Template Name: about-us
+* Description: Displays all posts
+*/
+get_header(); ?>
 
 <head>
 
@@ -41,9 +46,10 @@
             <article id="post-<?php the_ID();?>" <?php post_class();?>>
                 <header class="entry-header">
                  
-                        <?php the_title('    <div class="text-center"> <h1 class="entry-title">','</h1> </div>');?>
+                        <?php the_title('    <div class="text-center"> <h1 class="verticaltext_content">','</h1> </div>');?>
                     </div>
             </div>
+    
     <div class="entry-content">
         <div class="container">
             <div class="row">
@@ -78,6 +84,11 @@
                     ?>
 
 
+<!--
+<div class="verticaltext">
+    <div class="verticaltext_content">Test 12</div>
+   -->
+</div>
                 </footer>
             </article>
             <?php    // End the loop.
@@ -89,9 +100,14 @@
             </div>
         </div>
     </div>
-    <div class="page-section2">
-        
-    </div>
+    
+  
+</div>
+<div class="jumbotron">
+  <a href="<?php echo site_url('/get-involved'); ?>"><h1>Click Here to get Involved!</h1></a>
+  <p>See how to get in contact whether you are a musician, student or interested in the tech side of the station</p>
+  <p>For general queries, get in touch at management@urn1350.net </p>
+
 </div>
  <?php get_footer(); ?> 
 
