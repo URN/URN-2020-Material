@@ -424,11 +424,6 @@ border-width: 1px;*/
       font-size: 15px;
   }
   
-  .main-content {
-      background: rgb(255, 255, 255);
-      height: 26rem;
-  }
-  
   .LiveOnAir {
       font-size: 30px;
       /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
@@ -954,25 +949,6 @@ width: 100%;
   
   html {
       position: relative;
-  }
-  
-  .footer {
-      padding-bottom: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      line-height: 0.7rem;
-      height: 13rem;
-      /* Vertically center the text there */
-      background-color: #5F2A87;
-  }
-  
-  .footer .col-4 .urnlogo {
-      width: 15%;
-  }
-  
-  .footer .col-3 .text-muted {
-      font-size: 0.7rem;
-      padding-left: 30%;
   }
   /*******************************************************************************************/
   
@@ -1700,4 +1676,54 @@ padding-bottom: 0.6rem;*/
   
   .jumbotron {
       margin-bottom: 0px !important;
+  }
+  
+  .page-footer {
+      background-color: #5F2A87;
+      color: rgb(185, 185, 185);
+      font-family: 'milocha';
+      height: 100%;
+      display: inline-block;
+      overflow: hidden !important;
+  }
+  
+  .page-footer .title {
+      font-family: 'milocha';
+  }
+  
+  #footer {
+      background-color: purple !important;
+  }
+  
+  .footer-bulls {
+      text-decoration: none;
+      list-style: none;
+      color: white;
+  }
+  
+  .footer-bulls .footer-vis {
+      color: rgb(185, 185, 185);
+      font-size: 0.8em;
+  }
+  
+  .dermot {
+      font-size: 0.8em;
+      padding-left: 4rem;
+      padding-top: 1rem;
+  }
+  
+  .login {
+      font-size: 0.8em;
+      padding-left: 4rem;
+      margin-top: -1rem;
+  }
+  
+  .page-footer .para {
+      font-size: 0.9rem;
+  }
+  
+  .set {
+      padding-left: 2rem;
+      height: auto;
+      overflow: hidden !important;
   }

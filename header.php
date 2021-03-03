@@ -44,7 +44,7 @@
 
     </div>
       <div class="listen-live-top">
-        <a class="nav-link btn btn-sm btn-primary" onclick="togglePlay()" target="_blank">
+        <a class="nav-link btn btn-sm btn-primary" onclick="window.open('<?php  echo site_url('/stream'); ?>' ,'_blank')">
           <i class="fas fa-fw fa-play" id="livebutton"></i>
           <span class="listen-live">Listen Live!</span>
         </a>

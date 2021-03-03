@@ -12,97 +12,83 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/scss/urnportal.scss' ?>">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
 </head>   
-     <!-- Footer -->
-  <footer class="footer ">
-  <div class="row justify-content-center">
 
-    <!--
+            <!-- Grid row -->
+            <div class="row">
+            
+                <!-- Grid column -->
+                <div class="col-md-12 mb-4">
+                    
+                    <!--Footer-->
+                    <footer class="page-footer center-on-small-only stylish-color-dark">
 
-<nav class="navbar navbar-expand-xl navbar-light " role="navigation">--> <!-- might change to lg if it looks better -->
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-        <!--
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#"></a>
-        <?php
-        wp_nav_menu( array(
-            'theme_location'    => 'header-menu',
-            'depth'             => 2,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav justify-content-center',
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker(),
-        ) );
-        ?>-->
+                        <!--Footer Links-->
+                        <div class="set">
+                            <div class="row">
 
-    </div>
-</nav>
-        </div>
-<p class="foot-text text-right">Website created by <a href="https://www.linkedin.com/in/dermot-newton-9469281a1/" class="foot-text">Dermot Newton</a></p>
+                                <!--First column-->
+                                <div class="col-md-4">
+                                    <h5 class="title mb-4 mt-3 font-bold">University Radio Nottingham</h5>
+                                    <p class="para"> Since 1979, URN has been an award-winning student radio station, broadcasting in the heard of the UNiversity of Nottingham. We achieved Winner of Best Student Radio Station at the Student Radio Awards 2010, 2011, 2012, 2013, 2014, 2016, 2017 and 2018 as well as a plethora of individual awards to our fantastic presenters and crew.
+                                    </p>
+                                </div>
+                                <!--/.First column-->
 
-</footer>
+                                <hr class="clearfix w-100 d-md-none">
+
+                                <!--Second column-->
+                                <div class="col-3">
+                                    <h5 class="title mb-4 mt-3 font-bold">Useful Links</h5>
+                                    <ul>
+                                        <li class="footer-bulls"><a href="https://members.urn1350.net/login" class="footer-vis">Log in to members portal</a></li>
+                                        <li class="footer-bulls"><a href="https://su.nottingham.ac.uk/societies" class="footer-vis">Buy membership</a></li>
+                                        <li class="footer-bulls"><a href="https://audioboom.com/channels/4938774/episodes" class="footer-vis">Visit our Audioboom podcasts</a></li>
+                                        <li class="footer-bulls"><a href="https://www.nottingham.ac.uk/" class="footer-vis">University of Nottingham</a></li>
+                                    </ul>
+                                </div>
+                                <!--/.Second column-->
+
+                             
+
+                                <hr class="clearfix w-100 d-md-none">
+
+                                <!--Fourth column-->
+                                <div class="col-1">
+                                    <h5 class="title mb-4 mt-3 font-bold ">Socials </h5>
+                                    <ul>
+                                        <li class="footer-bulls"><a href="https://www.instagram.com/urn1350/?hl=en" class="footer-vis">Instragram</a></li>
+                                        <li class="footer-bulls"><a href="https://twitter.com/urn1350?lang=en" class="footer-vis">Twitter</a></li>
+                                        <li class="footer-bulls"><a href="https://www.facebook.com/urn1350/" class="footer-vis">Facebook</a></li>
+                                        <li class="footer-bulls"><a href="https://www.youtube.com/user/urn1350" class="footer-vis">Youtube</a></li>
+                                    </ul>
+                                </div>
+                                <!--/.Fourth column-->
+                                
+                                <hr class="clearfix w-100 d-md-none">
+
+                                <!--Fourth column-->
+                                <div class="col-4">
+                                  <p class="dermot">Website designed and developed by <a href="https://www.linkedin.com/in/dermot-newton-9469281a1/">Dermot Newton</a> </p>
+                                  <p class="login"><a href="<?php echo site_url( '/wp-login.php' ); ?>" > log in</a> </p>
+                                  <p class="login">Copyright © URN 2021</p>
+                                </div>
+                        </div>
+                        <!--/.Footer Links-->
+                        </div>
+                        
+
+                    </footer>
+                    <!--/.Footer-->
+                                    
+                </div>
+                <!-- Grid column -->
+            
+            </div>
+            <!-- Grid row -->
 
 
 
-
-
-
-
-
-
-
-
-
-  <!--<footer class="footer">
-          <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-6">
-                <span class="text-muted">URN - University Radio Nottingham</span>
-
-              </div>
-              <div class="col-3">
-                  <span class="text-muted">Website Designed by Dermot Newton</span>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-6">
-              </div>
-              <div class="col-3">
-                  <span class="text-muted">Head of Tech and Digital 2020/21</span>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-6">
-              </div>
-              <div class="col-3">
-                  <span class="text-muted"> Find me on Linkedin <a href=" https://www.linkedin.com/in/dermot-newton-9469281a1/">here</a>
-</span>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-4">
-              </div>
-              <div class="col-4">
-                <?php   echo '<img class="urnlogo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?>
-
-              </div>
-              <div class="col-4">
-              </div>
-          </div>
-          <div class="container">
-
-<nav class="navbar navbar-expand-xl navbar-light " role="navigation"> --><!-- might change to lg if it looks better --><!-- 
-  <div class="container">
-     Brand and toggle get grouped for better mobile display -->
+     
     <?php wp_footer()?>
 
 </body>
