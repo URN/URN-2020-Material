@@ -17,7 +17,7 @@
             <div class="row">
             
                 <!-- Grid column -->
-                <div class="col-md-12 mb-4">
+                <div class="col-md-12">
                     
                     <!--Footer-->
                     <footer class="page-footer center-on-small-only stylish-color-dark">

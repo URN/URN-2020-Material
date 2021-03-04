@@ -16,7 +16,7 @@
   
   body {
       font-family: 'quicksand', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      overflow-x: hidden;
+      overflow-x: hidden !important;
   }
   
   h1 {
@@ -1222,7 +1222,6 @@ padding-bottom: 0.6rem;*/
   .call-to-action .overlay {
       position: absolute;
       background-color: #212529;
-      height: 100%;
       width: 100%;
       top: 0;
       left: 0;
@@ -1682,43 +1681,49 @@ padding-bottom: 0.6rem;*/
       background-color: #5F2A87;
       color: rgb(185, 185, 185);
       font-family: 'milocha';
-      height: 100%;
       display: inline-block;
-      overflow: hidden !important;
+      overflow-x: hidden !important;
   }
   
   .page-footer .title {
       font-family: 'milocha';
+      overflow-x: hidden !important;
   }
   
   #footer {
-      background-color: purple !important;
+      background-color: rgb(0, 173, 216) !important;
+      overflow-x: hidden !important;
   }
   
   .footer-bulls {
       text-decoration: none;
       list-style: none;
       color: white;
+      overflow-x: hidden !important;
   }
   
   .footer-bulls .footer-vis {
       color: rgb(185, 185, 185);
       font-size: 0.8em;
+      overflow-x: hidden !important;
   }
   
   .dermot {
       font-size: 0.8em;
       padding-left: 4rem;
       padding-top: 1rem;
+      overflow-x: hidden !important;
   }
   
   .login {
       font-size: 0.8em;
       padding-left: 4rem;
+      overflow-x: hidden !important;
       margin-top: -1rem;
   }
   
   .page-footer .para {
+      overflow-x: hidden !important;
       font-size: 0.9rem;
   }
   
@@ -1726,4 +1731,5 @@ padding-bottom: 0.6rem;*/
       padding-left: 2rem;
       height: auto;
       overflow: hidden !important;
+      overflow-x: hidden !important;
   }
