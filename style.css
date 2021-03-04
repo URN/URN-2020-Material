@@ -1699,13 +1699,11 @@ padding-bottom: 0.6rem;*/
       text-decoration: none;
       list-style: none;
       color: white;
-      overflow-x: hidden !important;
   }
   
   .footer-bulls .footer-vis {
       color: rgb(185, 185, 185);
       font-size: 0.8em;
-      overflow-x: hidden !important;
   }
   
   .dermot {
