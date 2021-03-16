@@ -36,7 +36,7 @@
   
   .mt-4 {
       font-family: 'quicksand', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      overflow-x: hidden;
+      overflow-y: hidden;
   }
   
   .title-logo {
@@ -74,12 +74,6 @@
   }
   
   .header .navbar {
-      background-color: #5F2A87;
-      /*height: 35px; NEVER PUTHIEGHT HERE BECAUSE DROP DOWN STOPS WORKING*/
-      font-family: 'Quicksand', 'milocha', 'Lato';
-  }
-  
-  .footer .navbar {
       background-color: #5F2A87;
       /*height: 35px; NEVER PUTHIEGHT HERE BECAUSE DROP DOWN STOPS WORKING*/
       font-family: 'Quicksand', 'milocha', 'Lato';
@@ -142,14 +136,14 @@ border-width: 1px;*/
       border: 0;
       text-decoration: underline;
   }
-  /* Highlight using list element 
-
- li.current_page_item {
-    background: #9225a8;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: underline;
-}*/
+  /* Highlight using list element */
+  
+  li.current_page_item {
+      background: #9225a8;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: underline;
+  }
   /* Highlight using link element */
   
   .footer .navbar a {
@@ -1706,6 +1700,10 @@ padding-bottom: 0.6rem;*/
       font-size: 0.8em;
   }
   
+  .Clogin {
+      color: rgb(185, 185, 185);
+  }
+  
   .dermot {
       font-size: 0.8em;
       padding-left: 4rem;
@@ -1730,4 +1728,26 @@ padding-bottom: 0.6rem;*/
       height: auto;
       overflow: hidden !important;
       overflow-x: hidden !important;
+  }
+  /* the page.php backgrouns*/
+  
+  .main-page-content {
+      background: url(ugh.png) no-repeat center center;
+  }
+  
+  .urn-banner {
+      background: url(ugh.png) no-repeat center center;
+  }
+  
+  #jumbo-about {
+      background: url(portland.png) no-repeat center center;
+  }
+  
+  .purp {
+      background-color: rgba(234, 0, 255, 0.507);
+  }
+  
+  #click-here {
+      color: black;
+      font-family: 'quicksand', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   }

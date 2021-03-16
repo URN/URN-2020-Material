@@ -69,8 +69,7 @@
                                 <!--Fourth column-->
                                 <div class="col-4">
                                   <p class="dermot">Website designed and developed by <a href="https://www.linkedin.com/in/dermot-newton-9469281a1/">Dermot Newton</a> </p>
-                                  <p class="login"><a href="<?php echo site_url( '/wp-login.php' ); ?>" > log in</a> </p>
-                                  <p class="login">Copyright © URN 2021</p>
+                                  <p class="login">Copyright <a class="Clogin" href="<?php echo site_url( '/wp-login.php' );?>" >©</a> URN 2021</p>
                                 </div>
                         </div>
                         <!--/.Footer Links-->
