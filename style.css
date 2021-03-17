@@ -1739,9 +1739,7 @@ padding-bottom: 0.6rem;*/
       background: url(ugh.png) no-repeat center center;
   }
   
-  #jumbo-about {
-      background: url(portland.png) no-repeat center center;
-  }
+  #jumbo-about {}
   
   .purp {
       background-color: rgba(234, 0, 255, 0.507);

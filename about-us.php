@@ -103,12 +103,13 @@ get_header(); ?>
     
   
 </div>
+<!--
 <div class="jumbotron" id = "jumbo-about">
   <div class="purp">
       <a id="click-here" href="<?php echo site_url('/get-involved'); ?>"><h1>Click Here to get Involved!</h1></a>
       <p>See how to get in contact whether you are a musician, student or interested in the tech side of the station</p>
       <p>For general queries, get in touch at management@urn1350.net </p>
   </div>
-</div>
+</div>-->
  <?php get_footer(); ?> 
 
