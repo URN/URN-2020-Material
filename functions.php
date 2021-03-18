@@ -10,6 +10,8 @@
 function urn_material_scripts() {
     // Load our main stylesheet.
     wp_enqueue_style('main-style', get_stylesheet_uri());
+    wp_enqueue_script('listen-now', get_template_directory_uri() . '/listen-now.js', array('jquery'), false, true);
+
     if ( is_home() || is_page ('schedule')) {
       wp_enqueue_script('the-schedule', get_template_directory_uri() . '/scheduleJS.js', array('jquery'), false, true);
   }
@@ -72,4 +74,5 @@ if (!current_user_can('administrator') && !is_admin()) {
         'after_title' => '</h2>',
     ) );
   
+
 ?>
