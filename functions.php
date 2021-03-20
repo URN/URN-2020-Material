@@ -12,10 +12,10 @@ function urn_material_scripts() {
     wp_enqueue_style('main-style', get_stylesheet_uri());
     wp_enqueue_script('listen-now', get_template_directory_uri() . '/js/listen-now.js', array('jquery'), false, true);
 
-    if ( is_home() || is_page ('schedule')) {
+   // if ( is_home() || is_page ('schedule')) {
       wp_enqueue_script('the-schedule', get_template_directory_uri() . '/js/schedule.js', array('jquery'), false, true);
 
-  }
+  //}
 
   
 }
