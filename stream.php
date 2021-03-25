@@ -1,33 +1,44 @@
-bhbhbhbh
-<div class="listen-live-top">
-        <a class="nav-link btn btn-sm btn-primary" onclick="togglePlay()">
-          <i class="fas fa-fw fa-play" id="livebutton"></i>
-          <span class="listen-live">Listen Live!</span>
-        </a>
-      </div>      <!-- TODO make a popup radio player like university radio york or insanity radio-->
-        <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none"  ></audio>
-          <script>
-            var myAudio = document.getElementById("urnlive");
-            var isPlaying = false;
+<?php
+/**
+* Template Name: Stream
+* Description: Page to listen to the stream live
+*/
+show_admin_bar(false);
+remove_action('wp_head', '_admin_bar_bump_cb');
 
-            function togglePlay() {
-              if (isPlaying) {
-                myAudio.pause()
-                $('#livebutton').removeClass('fa-pause');
-                $('#livebutton').addClass('fa-play');
-              } else {
-                myAudio.play();
-                $('#livebutton').removeClass('fa-play');
-                $('#livebutton').addClass('fa-pause');
-              }
-            };
-            myAudio.onplaying = function() {
-              isPlaying = true;
-            };
-            myAudio.onpause = function() {
-              isPlaying = false;
-            };
-          </script>
+get_header(); ?>
 
-  </div>
+<head>
 
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="University Radio Nottingham is the multi-award–winning university radio station of the University of Nottingham Students’ Union.">
+  <meta name="author" content="">
+  <title>URN MAIN SITE</title>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
+
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/bootstrap/css/bootstrap.min.css' ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/scss/urnportal.scss' ?>">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' ?>">
+  
+  <!-- Custom fonts for this template -->
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
+  <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/simple-line-icons/css/simple-line-icons.css'?>">
+  <link  rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body class="stream">
+  <!--  <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="URN Logo">
+    <h1>University Radio Nottingham</h1>
+
+    <audio controls autoplay>
+        <source src="https://live.urn1350.net/listen" type="audio/mpeg">
+    </audio>
+-->
+    <?php include('includes/listen-now.php'); ?>
+
+</body>
+
+<?php wp_footer(); ?>

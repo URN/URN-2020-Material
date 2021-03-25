@@ -167,7 +167,8 @@
 
 
 
-<?php include( 'listen-now.php' );
+<?php // include( 'listen-now.php' );
 
-?><h2 class="show-title-name"> <script> function($) </script> </h2>
+?>
+<!--<h2 class="show-title-name"> <script> function($) </script> </h2>-->
  

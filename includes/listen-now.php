@@ -18,9 +18,9 @@
         </div>
         <button class="btn listen" name="size" style="<?php echo $btn; ?>"><?php echo $minimiseT; ?></button>
     </div>
-    <div class="show-container" style="<?php echo $minimise; ?>">
-        <div class="show-image"
-             style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mic-icon.svg'); display: block"></div>
+    <div class="show-container" id="streams" style="<?php echo $minimise; ?>">
+        <div class="show-image" >
+        </div>
         <div class="show-info">
             <h2 class="show-title-prelude">URN presents</h2>
             <h1 class="show-title-name">URN Live</h1>
