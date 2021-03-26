@@ -67,14 +67,17 @@
       color: #bebebe;
   }
   
-  .listen-live-top {
-      margin-left: 58rem;
-      margin-top: -4.5rem;
-      padding-bottom: 2rem;
+  @media (min-width: 1200px) {
+      .listen-live-top {
+          margin-left: 58rem;
+          margin-top: -4.5rem;
+          padding-bottom: 2rem;
+      }
   }
   
   #slogan {
       font-family: 'milocha', 'Quicksand', 'Lato';
+      padding-top: 1rem;
       font-size: 1rem;
       text-align: center;
       color: rgb(233, 233, 233);
