@@ -58,6 +58,11 @@
     <source src="<?php echo get_template_directory_uri(); ?>/img/video.mp4" alt="" type="video/mp4"></source>
  </video>
 
+
+ <?php $minimise = is_home() || is_page( 'stream' ) ? '' : 'display: none;' ?>
+<?php $minimiseT = is_home() ? 'Shrink' : 'Expand' ?>
+<?php $btn = is_page( 'stream' ) ? 'display: none;' : '' ?>
+<div id="listen-now">   
  <div class="content ">
   <div class="container">
    <div class="card mx-auto " style="max-width: 840px;" id= "now-playing-full-card">
@@ -71,7 +76,7 @@
           </div>
         </div>
       <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/Holly.JPG" alt=""  class="card-img" alt="..." id="presenterIMG">
+      <span  alt=""  class="show-image" alt="..." id="presenterIMG">
           <div class="card-img-overlay">
             <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
               <script>
@@ -107,6 +112,7 @@
     </div>
   </div>
  </div> 
+</div>
 </div>
 
 <div class="container">

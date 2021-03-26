@@ -23,16 +23,19 @@
                                <!-- <h2 class="show-title-prelude">URN presents</h2>-->
 
                                 <h1 class="show-title-name">URN Live</h1>
+
                                 <h3 class="show-title-time">24/7</h3>
                                 <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
                                 
                                 <audio class="ug" controls autoplay>
-        <source src="https://live.urn1350.net/listen"  class="player" type="audio/mpeg">
-    </audio>   </div>
+                                   <source src="https://live.urn1350.net/listen"  class="player" type="audio/mpeg">
+                                </audio>  
+                            </div>
                         </div>
                         
                     <div class="col-md-4" >
-                        <img src="<?php echo get_template_directory_uri(); ?>/Holly.JPG" alt=""  class="card-img" alt="..." id="presenterIMG">
+
+                        <span  alt=""  class="show-image" alt="..." id="presenterIMG">
                             <div class="card-img-overlay">
                                 <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
                                     <script>
@@ -61,7 +64,7 @@
                 <!-- <a class="but" onclick="togglePlay()">
                     <i class="fas fa-fw fa-play  fa-10x" onclick="togglePlay() "id="livebutton2"></i>
                     </a>-->
-
+                                    
                             </div>
                     </div>
                 </div>

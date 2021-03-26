@@ -222,7 +222,7 @@ border-width: 1px;*/
       -webkit-box-flex: 2;
       flex: 2;
       border-radius: 1rem;
-      outline: none;
+      outline: transparent;
       /*9ecaed is nice blue*/
       border-radius: 2rem 2rem 2rem 2rem;
       border-color: #5F2A87;
@@ -271,6 +271,10 @@ border-width: 1px;*/
       height: 100%;
       width: 100%;
       border-radius: 0 2rem 2rem 0;
+      text-decoration: none;
+      border-color: transparent;
+      background-color: red;
+      overflow: hidden;
   }
   
   #PlayURN {
@@ -1796,12 +1800,6 @@ padding-bottom: 0.6rem;*/
   .show-title-time {
       font-family: 'quicksand', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
       color: white;
-  }
-  
-  .show-image {
-      background-image: url('/img/mic-icon.svg');
-      display: block"
-
   }
   
   #now-playing-card-body2 {
