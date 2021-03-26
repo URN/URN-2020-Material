@@ -99,7 +99,7 @@
            <!-- <a class="but" onclick="togglePlay()">
               <i class="fas fa-fw fa-play  fa-10x" onclick="togglePlay() "id="livebutton2"></i>
             </a>-->
-            <a class="but2"onclick="togglePlay()">
+            <a class="but2" onclick="window.open('<?php  echo site_url('/stream'); ?>' ,'_blank')">
               <img src="<?php echo get_template_directory_uri(); ?>/img/urnwhite.png" alt=""  class="card-img" alt="..." id="PlayURN">
             </a>
           </div>

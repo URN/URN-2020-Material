@@ -84,7 +84,7 @@ get_header(); ?>
                       </div>
             <div class="row">
   <!-- Card Start -->
-<div class="card" style="width: 58rem;">
+<div class="card" id="host-show-card" style="width: 58rem;">
   <div class="card-body">
   <h5 class="card-title" ><div class="wal"><div class="text-center"><i class="fas fa-podcast"></i> <?php echo get_the_title(get_page_by_path( 'daytime', OBJECT, 'post' ));?></div></div></h5> <!-- 148 = daytime id-->
   <div class="aiko"> <p class="card-text mb-2"> <?php $id = get_page_by_path( 'daytime', OBJECT, 'post' ); // add the ID of the page where the zero is
@@ -97,7 +97,7 @@ get_header(); ?>
 </div>
     <!-- Card Start2 -->
     
- <div class="card text-right" style="width: 58rem;">
+ <div class="card text-right" id="host-show-card" style="width: 58rem;">
 
   <div class="card-body">
   <h5 class="card-title " ><div class="wal2"><div class="text-center"><i class="fas fa-podcast"></i> <?php echo get_the_title(get_page_by_path( 'after-dark', OBJECT, 'post' ));?></div></div></h5> <!-- 150 = After dark id--></h5>
@@ -111,7 +111,7 @@ get_header(); ?>
 
 
  <!-- Card Start3 -->
- <div class="card" style="width: 58rem;">
+ <div class="card" id="host-show-card" style="width: 58rem;">
   <div class="card-body">
   <h5 class="card-title" ><div class="wal"><div class="text-center"><i class="fas fa-podcast"></i> <?php echo get_the_title(get_page_by_path( 'speech', OBJECT, 'post' ));?></div></div></h5> <!-- 152 = speech id-->
   <div class="aiko">  <p class="card-text mb-2"> <?php $id = get_page_by_path( 'speech', OBJECT, 'post' ); // add the ID of the page where the zero is
@@ -125,7 +125,7 @@ get_header(); ?>
 
     <!-- Card Start4 -->
     
-    <div class="card text-right" style="width: 58rem;">
+    <div class="card text-right" id="host-show-card" ="width: 58rem;">
 
 <div class="card-body">
 <h5 class="card-title " ><div class="wal3"><div class="text-center"><i class="fas fa-podcast"></i> <?php echo get_the_title(get_page_by_path( 'news', OBJECT, 'post' ));?></div></div></h5> <!-- 154 = News id--></h5>
@@ -141,7 +141,7 @@ get_header(); ?>
 
 
  <!-- Card Start5 -->
- <div class="card" style="width: 58rem;">
+ <div class="card" id="host-show-card" style="width: 58rem;">
   <div class="card-body">
   <h5 class="card-title" ><div class="wal"><div class="text-center"><i class="fas fa-podcast"></i>  <?php echo get_the_title(get_page_by_path( 'sport', OBJECT, 'post' ));?></div></div></h5> <!-- 156 = sport id-->
   <div class="aiko">  <p class="card-text mb-2"> <?php $id = get_page_by_path( 'sport', OBJECT, 'post' ); // add the ID of the page where the zero is

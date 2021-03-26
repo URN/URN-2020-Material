@@ -10,7 +10,7 @@
 <?php $minimise = is_home() || is_page( 'stream' ) ? '' : 'display: none;' ?>
 <?php $minimiseT = is_home() ? 'Shrink' : 'Expand' ?>
 <?php $btn = is_page( 'stream' ) ? 'display: none;' : '' ?>
-<div id="listen-now">
+<div id="listen-now">   
     <div class="now-playing">
         <span class="current-track"></span>
         <div class="progress-container">

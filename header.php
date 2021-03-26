@@ -83,7 +83,11 @@
         </div>
        
   </div>-->
-
+<div class="container">
+  <div class="col" >
+    <h2 id="slogan">Your Music. Your News. Your Student Radio.</h2>
+  </div>
+</div>
 
   <div class="header">
     <div class="row justify-content-center">
@@ -114,7 +118,6 @@
 </div>
 </div>
 </div>
-
 
 
 

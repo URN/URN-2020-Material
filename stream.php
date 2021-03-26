@@ -30,14 +30,15 @@ get_header(); ?>
 
 </head>
 <body class="stream">
-  <!--  <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="URN Logo">
-    <h1>University Radio Nottingham</h1>
+    <!--
 
-    <audio controls autoplay>
-        <source src="https://live.urn1350.net/listen" type="audio/mpeg">
-    </audio>
--->
-    <?php include('includes/listen-now.php'); ?>
+<img src="<?php echo get_template_directory_uri(); ?>/urn.png" alt="URN Logo">
+    <h1>University Radio Nottingham</h1>-->
+<div class="container">
+<?php include('includes/listen-now2.php'); ?>
+
+   
+    </div>
 
 </body>
 
