@@ -73,6 +73,8 @@
             <p class="card-text text-center" id="Show-name">The URN Show - Kathryn Embree</p>
             <p class="card-text" ><div class="text-muted"id="Show-time">11am-12am</div></p>
             <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
+            <button class="right-button" id="listen-mob"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> LISTEN LIVE</a> </button>
+
           </div>
         </div>
       <div class="col-md-4">
