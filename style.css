@@ -340,6 +340,31 @@ border-width: 1px;*/
           background-color: #00d351;
           height: 3.4rem;
       }
+      #hero #up-next-full-card {
+          background: transparent !important;
+          z-index: 25;
+          margin-left: 40rem;
+          margin-top: -23.75rem;
+          padding-bottom: 13rem;
+          /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
+          -webkit-box-flex: 2;
+          flex: 2;
+          outline: none;
+          /*9ecaed is nice blue*/
+          border-color: #5F2A87;
+          color: #00d351;
+          font-family: 'milocha', 'Lato';
+          margin-right: 16rem;
+          max-height: 6.89rem;
+      }
+      #up-next-sec-2 {
+          font-family: 'Quicksand', sans-serif !important;
+          color: #00d351;
+          font-size: 2rem;
+          padding-left: 2.7rem;
+          background-color: #9225a8c2;
+          border-radius: 0 2rem 0 0;
+      }
   }
   
   .right-button {
@@ -1781,38 +1806,98 @@ padding-bottom: 0.6rem;*/
       font-family: 'milocha';
       display: inline-block;
       overflow-x: hidden !important;
+      overflow-y: hidden !important;
   }
   
-  .page-footer .title {
-      font-family: 'milocha';
+  #foot-back {
+      background-color: #5F2A87 !important;
+      color: rgb(185, 185, 185);
+      font-family: 'milocha' !important;
       overflow-x: hidden !important;
+      overflow-y: hidden !important;
   }
   
-  #footer {
-      background-color: rgb(0, 173, 216) !important;
+  .foot-title {
+      font-family: 'milocha';
       overflow-x: hidden !important;
   }
   
   .footer-bulls {
       text-decoration: none;
       list-style: none;
+      margin-left: -2rem;
       color: white;
   }
   
   .footer-bulls .footer-vis {
       color: rgb(185, 185, 185);
-      font-size: 0.8em;
+      font-size: 0.81rem;
+      width: 200%;
+  }
+  
+  .footer-bulls .footer-vis:hover {
+      color: #e415c8;
+      font-size: 0.81rem;
+      width: 200%;
   }
   
   .Clogin {
       color: rgb(185, 185, 185);
   }
   
-  .dermot {
-      font-size: 0.8em;
+  #credit-col {
+      padding-top: 0.5rem;
+  }
+  
+  .credits {
+      margin-left: -4rem;
+      font-size: 0.9em;
       padding-left: 4rem;
-      padding-top: 1rem;
+      margin-top: 0rem;
       overflow-x: hidden !important;
+      font-family: 'milocha', 'Quicksand', 'Lato';
+      overflow-y: hidden !important;
+  }
+  
+  .dev-link {
+      color: rgb(185, 185, 185);
+  }
+  
+  .dev-link:hover {
+      color: #e415c8;
+  }
+  
+  #foot-para {
+      width: 200%;
+      padding-right: 10rem;
+      margin-left: -4rem;
+      font-family: 'milocha', 'Quicksand', 'Lato';
+  }
+  
+  .footer-logo {
+      /*  height: 12rem;
+      width: 12rem;
+      margin-top: -9.5rem;
+      margin-left: 65rem;*/
+      height: 12rem;
+      width: 12rem;
+      overflow-x: hidden !important;
+      overflow-y: hidden !important;
+  }
+  
+  #footer-slogan {
+      /* font-family: 'milocha', 'Quicksand', 'Lato';
+      font-size: 1rem;
+      text-align: center;
+      color: rgb(233, 233, 233);
+      margin-left: 40rem;*/
+      margin-top: -3rem;
+      padding-left: 32rem;
+      font-family: 'milocha', 'Quicksand', 'Lato';
+      font-size: 1rem;
+      overflow-x: hidden !important;
+      overflow-y: hidden !important;
+      color: rgb(233, 233, 233);
   }
   
   .login {
@@ -1842,8 +1927,6 @@ padding-bottom: 0.6rem;*/
   .urn-banner {
       background: url(ugh.png) no-repeat center center;
   }
-  
-  #jumbo-about {}
   
   .purp {
       background-color: rgba(234, 0, 255, 0.507);

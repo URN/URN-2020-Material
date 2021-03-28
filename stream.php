@@ -39,7 +39,7 @@ get_header(); ?>
 
    
     </div>
-
+<br>
 </body>
+<?php get_footer(); ?> 
 
-<?php wp_footer(); ?>

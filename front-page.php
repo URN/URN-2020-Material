@@ -255,7 +255,7 @@
   
 
   <!-- Testimonials -->
-  <div class="row justify-content-center">
+  <div class="row justify-content-center" id="front-testi">
 
           <h1 class="entry-title">HOW TO GET INVOLVED</h1>
       </div>
