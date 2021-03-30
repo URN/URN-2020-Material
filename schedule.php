@@ -8,7 +8,7 @@
 
  
 
-<div class="main-page-content">
+<div class="main-page-content-alt">
 <?php
                 // Start the loop.                </div>
                 while ( have_posts() ) : the_post();
