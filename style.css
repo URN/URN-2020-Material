@@ -1942,7 +1942,9 @@ padding-bottom: 0.6rem;*/
         }
         /* the page.php backgrouns*/
         
-        .main-page-content {}
+        .main-page-content {
+            background: url(ugh.png) no-repeat center center;
+        }
         
         .urn-banner {
             background: url(ugh.png) no-repeat center center;
