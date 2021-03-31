@@ -78,25 +78,29 @@
 
         <!--<a href="/stream" title="Listen now!" target="_blank" class="play">Listen Now</a>-->
 <br>
-        <div class="card" id="card-stream">
+
+
+
+        <div class="card mx-auto" id="card-stream">
   
             <div class="card-body">
             <div class="container">
 
-          <div class="col-md-6">
+          <div class="col-md-7">
                 <h5 class="card-title" id="card-stream-title">MESSAGE <br> THE <br> STUDIO</h5>
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-5">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/urnwhite.png" alt=""  class="smol-stream-img" alt="..." id="">
-
+<div class="kill">
                     <form id="message-the-studio" name="message-the-studio" method="post" action="">
                     <span class="message"></span>
-                    <textarea autocomplete="off" name="studio-message"
+                    <textarea  class = "textbox" autocomplete="off" name="studio-message"
                             placeholder="<?php echo $message_studio_placeholder; ?>"
                             aria-label="Text area to message into the studios"></textarea>
                     <button autocomplete="off" class="btn" type="submit" name="submit">Send</button>
                      </form>
+                     </div>
                 </div>
             </div>
             </div>

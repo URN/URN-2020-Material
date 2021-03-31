@@ -2002,9 +2002,7 @@ padding-bottom: 0.6rem;*/
         #card-stream {
             background-color: #e415c8;
             border-radius: 3rem;
-            width: 40rem !important;
-            margin-left: 14rem;
-            height: 13rem !important;
+            width: 100%;
         }
         
         #card-stream-title {
@@ -2013,7 +2011,14 @@ padding-bottom: 0.6rem;*/
         
         #message-the-studio {
             margin-top: -10rem;
-            margin-left: 20rem;
+        }
+        
+        .kill {
+            margin-left: 100%;
+        }
+        
+        .textbox {
+            width: 25rem;
         }
         
         .smol-stream-img {
