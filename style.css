@@ -40,19 +40,38 @@
         }
         
         .title-logo {
-            height: 6em;
-            width: 6em;
+            padding-top: 2vh;
+            height: 10%;
+            width: 10%;
+            padding-left: 4vh;
+            padding-right: 4vh;
+        }
+        
+        .title-sra {
+            padding-top: 2vh;
+            height: 12%;
+            width: 12%;
+            padding-right: 2vh;
+            padding-left: 2vh;
+        }
+        
+        .title-uon {
+            padding-top: 2vh;
+            margin-left: -10%;
+            height: 8%;
+            width: 8%;
+            padding-right: 2vh;
+            padding-left: 4vh;
         }
         
         .website-name {
-            font-size: 3em;
+            font-size: 7vh;
             /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
-            font-family: 'milocha', 'Lato';
+            font-family: 'milocha', 'Quicksand', 'Lato';
             color: #ffffff;
             /*margin-left: 540px;*/
-            padding-top: 1rem;
-            padding-left: 6rem;
-            padding-right: 13rem;
+            padding-top: 2vh;
+            padding-right: 14vh;
         }
         
         #livebutton2 {
@@ -61,13 +80,26 @@
             color: #ffffff;
         }
         
+        .bruh {
+            padding-top: 2vh;
+            margin-left: 0vh;
+            padding-bottom: 4vh;
+        }
+        
         #livebutton2:hover {
             padding-right: 2.4rem;
             margin-top: 5px;
             color: #bebebe;
         }
         
-        @media (min-width: 1200px) {
+        #bonbon {
+            width: 24vh !important;
+            height: 5vh !important;
+            font-size: 2.5vh;
+            font-family: 'milocha';
+            padding-bottom: 5vh;
+        }
+        /*    @media (min-width: 1200px) {
             .listen-live-top {
                 margin-left: 58rem;
                 margin-top: -4.5rem;
@@ -75,20 +107,20 @@
             }
         }
         
-        @media (max-width: 1200px) {
+      @media (max-width: 1200px) {
             .listen-live-top {
                 margin-left: 1rem;
                 padding-bottom: 1rem;
             }
-        }
+        }*/
         
         #slogan {
             font-family: 'milocha', 'Quicksand', 'Lato';
-            padding-top: 1rem;
-            font-size: 1rem;
+            padding-top: 7vh;
+            font-size: 3vh;
             text-align: center;
             color: rgb(233, 233, 233);
-            margin-top: -1rem;
+            margin-top: -10vh;
         }
         
         .header .navbar {

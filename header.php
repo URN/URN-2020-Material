@@ -38,16 +38,18 @@
   
   <div class="container">
 
-    <div class="row justify-content-center">
-      <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?>
-      <h1 class="website-name">University Radio Nottingham</h1> 
+    <div class="row justify-content-center" id="hayday">
+    <?php   echo '<img class="title-uon" src="' . get_bloginfo('template_directory') . '/img/uon.png" />'; ?>
 
-    </div>
-      <div class="listen-live-top">
-        <a class="nav-link btn btn-sm btn-primary" onclick="window.open('<?php  echo site_url('/stream'); ?>' ,'_blank')">
+    <?php   echo '<img class="title-sra" src="' . get_bloginfo('template_directory') . '/img/sra.png" />'; ?>
+      <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?>
+      <h1 class="website-name ">University Radio Nottingham</h1> 
+      <div class="bruh">
+      <a class="nav-link btn " id="bonbon" onclick="window.open('<?php  echo site_url('/stream'); ?>' ,'_blank')">
           <i class="fas fa-fw fa-play" id="livebutton"></i>
           <span class="listen-live">Listen Live!</span>
-        </a>
+          </a>
+          </div>
       </div>      <!-- TODO make a popup radio player like university radio york or insanity radio-->
         <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none"  ></audio>
           <script>
