@@ -40,38 +40,43 @@
         }
         
         .title-logo {
-            padding-top: 2vh;
-            height: 10%;
-            width: 10%;
-            padding-left: 4vh;
-            padding-right: 4vh;
+            height: 10vh;
+            padding-right: 2vh;
+            display: inline-block;
+            margin-top: -3rem;
         }
         
         .title-sra {
             padding-top: 2vh;
-            height: 12%;
-            width: 12%;
-            padding-right: 2vh;
+            height: 10vh;
             padding-left: 2vh;
         }
         
         .title-uon {
             padding-top: 2vh;
-            margin-left: -10%;
-            height: 8%;
-            width: 8%;
-            padding-right: 2vh;
+            margin-left: -20%;
+            height: 10vh;
             padding-left: 4vh;
         }
         
+        .neem {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        
+        #hayday {
+            margin-left: 5rem;
+        }
+        
         .website-name {
-            font-size: 7vh;
+            font-size: 6vh;
             /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
             font-family: 'milocha', 'Quicksand', 'Lato';
             color: #ffffff;
             /*margin-left: 540px;*/
             padding-top: 2vh;
-            padding-right: 14vh;
+            padding-right: 4vh;
+            display: inline-block;
         }
         
         #livebutton2 {
@@ -82,7 +87,6 @@
         
         .bruh {
             padding-top: 2vh;
-            margin-left: 0vh;
             padding-bottom: 4vh;
         }
         
@@ -121,6 +125,72 @@
             text-align: center;
             color: rgb(233, 233, 233);
             margin-top: -10vh;
+        }
+        
+        @media (max-width: 300px) {
+            .website-name {
+                font-size: 4vh;
+                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+                font-family: 'milocha', 'Quicksand', 'Lato';
+                color: #ffffff;
+                margin-right: 10vh;
+                /*margin-left: 540px;*/
+            }
+            .title-logo {
+                visibility: hidden;
+                padding: none;
+                margin: none;
+            }
+            .title-sra {
+                visibility: hidden;
+                padding: none;
+                margin: none;
+            }
+            .title-uon {
+                visibility: hidden;
+                padding: none;
+                margin: none;
+            }
+            #bonbon {
+                width: 24vh !important;
+                height: 5vh !important;
+                font-size: 2.5vh;
+                font-family: 'milocha';
+                padding-bottom: 5vh;
+            }
+        }
+        
+        @media (max-width: 200px) {
+            .website-name {
+                font-size: 4vh;
+                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+                font-family: 'milocha', 'Quicksand', 'Lato';
+                color: #ffffff;
+                margin-right: 10vh;
+                /*margin-left: 540px;*/
+            }
+            .title-logo {
+                visibility: hidden;
+                padding: none;
+                margin: none;
+            }
+            .title-sra {
+                visibility: hidden;
+                padding: none;
+                margin: none;
+            }
+            .title-uon {
+                visibility: hidden;
+                padding: none;
+                margin: none;
+            }
+            #bonbon {
+                width: 24vh !important;
+                height: 5vh !important;
+                font-size: 2.5vh;
+                font-family: 'milocha';
+                padding-bottom: 5vh;
+            }
         }
         
         .header .navbar {
