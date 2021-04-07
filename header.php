@@ -42,7 +42,7 @@
       <?php   echo '<img class="title-uon" src="' . get_bloginfo('template_directory') . '/img/uon.png" />'; ?>
 
       <?php   echo '<img class="title-sra" src="' . get_bloginfo('template_directory') . '/img/sra.png" />'; ?>
-    <div class="neem">
+    <div class="neem ">
       <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?><!-- 
       --><h1 class="website-name ">University Radio Nottingham</h1> 
     </div>
@@ -87,8 +87,8 @@
         </div>
        
   </div>-->
-<div class="container">
-  <div class="col" >
+<div class="container ">
+  <div class="col justify-content-center" >
     <h2 id="slogan">Your Music. Your News. Your Student Radio.</h2>
   </div>
 </div>
@@ -101,7 +101,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
           <button class="navbar-toggler" id="sum" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-            <span class="navbar-toggler-icon"></span>
+            <span class="toggle row justify-content-center">MENU</span>
           </button>
             <a class="navbar-brand" href="#"></a>
               <?php

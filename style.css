@@ -129,16 +129,18 @@
             margin-top: -10vh;
         }
         
-        @media (max-width: 300px) {
+        @media (max-width: 1200px) {
             .website-name {
                 font-size: 4vh;
                 /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
                 font-family: 'milocha', 'Quicksand', 'Lato';
                 color: #ffffff;
-                margin-right: 10vh;
+                margin-right: 1vh;
                 /*margin-left: 540px;*/
             }
-            .title-logo {}
+            .title-logo {
+                height: 2.8rem;
+            }
             .title-sra {
                 height: 6vh;
             }
@@ -147,45 +149,171 @@
             }
             #bonbon {
                 width: 8vh !important;
-                height: 0.6rem !important;
-                font-size: 1vh;
+                height: 1.9rem !important;
+                font-size: 1.2vh;
                 font-family: 'milocha';
-                padding-bottom: 5vh;
+                padding-bottom: 0.4vh;
+                padding-top: 0.8vh;
+                padding-left: 0vh;
+                padding-right: 0vh;
             }
             .bruh {
                 padding-top: 2vh;
-                padding-bottom: 0vh;
+                padding-bottom: 7vh;
+            }
+            #sum {
+                position: absolute;
+                top: 5rem;
+                height: 0.8rem;
+                margin-right: 80rem;
+                margin-top: -5rem;
+            }
+            .toggle {
+                font-family: 'milocha', 'Lato', sans-serif;
+                font-size: 0.8rem;
+                color: white;
+                visibility: none !important;
+            }
+            .toggle:hover {
+                font-family: 'milocha', 'Lato', sans-serif;
+                font-size: 0.8rem;
+                color: #00d351;
+                visibility: none !important;
+            }
+            #slogan {
+                font-size: 0.7rem;
+                margin-top: -6.3rem;
+            }
+            .neem {
+                padding-left: 0rem;
             }
         }
         
-        @media (max-width: 200px) {
+        @media (max-width: 760px) {
             .website-name {
-                font-size: 1.5rem;
+                font-size: 3vh;
                 /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
                 font-family: 'milocha', 'Quicksand', 'Lato';
                 color: #ffffff;
-                margin-right: 10vh;
+                margin-right: 1vh;
                 /*margin-left: 540px;*/
             }
             .title-logo {
-                height: 1.5rem;
-                margin-top: -2.5rem;
+                height: 2.8rem;
             }
             .title-sra {
-                padding: none;
-                margin: none;
+                height: 6vh;
             }
             .title-uon {
-                padding: none;
-                margin: none;
+                height: 6vh;
             }
             #bonbon {
-                width: 24vh !important;
-                height: 5vh !important;
-                font-size: 2.5vh;
-                margin-top: 2rem;
-                margin-left: -19rem;
+                width: 8vh !important;
+                height: 1.3rem !important;
+                font-size: 1.2vh;
                 font-family: 'milocha';
+                padding-bottom: 0.4vh;
+                padding-top: 0.8vh;
+                padding-left: 0vh;
+                padding-right: 0vh;
+                margin-left: -15.7rem;
+            }
+            .bruh {
+                padding-top: 6vh;
+                padding-bottom: 8vh;
+            }
+            #sum {
+                position: absolute;
+                top: 5rem;
+                height: 0.8rem;
+                margin-right: 80rem;
+                margin-top: -5rem;
+            }
+            .toggle {
+                font-family: 'milocha', 'Lato', sans-serif;
+                font-size: 0.8rem;
+                color: white;
+                visibility: none !important;
+            }
+            .toggle:hover {
+                font-family: 'milocha', 'Lato', sans-serif;
+                font-size: 0.8rem;
+                color: #00d351;
+                visibility: none !important;
+            }
+            #slogan {
+                font-size: 0.7rem;
+                margin-top: -6.4rem;
+            }
+            .neem {
+                padding-left: 0rem;
+                margin-left: -2rem;
+            }
+        }
+        
+        @media (max-width: 460px) {
+            .website-name {
+                font-size: 2vh;
+                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+                font-family: 'milocha', 'Quicksand', 'Lato';
+                color: #ffffff;
+                margin-right: 1vh;
+                /*margin-left: 540px;*/
+            }
+            .title-logo {
+                height: 1.8rem;
+                margin-top: -1.5rem;
+            }
+            .title-sra {
+                height: 6vh;
+            }
+            .title-uon {
+                height: 6vh;
+                padding-left: none;
+                margin-left: -30%;
+            }
+            #bonbon {
+                width: 8vh !important;
+                height: 1.3rem !important;
+                font-size: 1.2vh;
+                font-family: 'milocha';
+                padding-bottom: 0.4vh;
+                padding-top: 0.8vh;
+                padding-left: 0vh;
+                padding-right: 0vh;
+                margin-left: -11.6rem;
+            }
+            .bruh {
+                padding-top: 5vh;
+                padding-bottom: 9vh;
+            }
+            #sum {
+                position: absolute;
+                top: 5rem;
+                height: 0.8rem;
+                margin-right: 80rem;
+                margin-top: -5rem;
+            }
+            .toggle {
+                font-family: 'milocha', 'Lato', sans-serif;
+                font-size: 0.5rem;
+                color: white;
+                visibility: none !important;
+            }
+            .toggle:hover {
+                font-family: 'milocha', 'Lato', sans-serif;
+                font-size: 0.8rem;
+                color: #00d351;
+                visibility: none !important;
+            }
+            #slogan {
+                font-size: 0.4rem;
+                margin-top: -6.4rem;
+                margin-left: 0.7rem;
+            }
+            .neem {
+                padding-left: 0rem;
+                margin-left: -2rem;
             }
         }
         
@@ -293,10 +421,12 @@ border-width: 1px;*/
             overflow: hidden;
         }
         
-        #sum {
-            margin-right: 80rem;
-            margin-top: -5rem;
-            background-color: white;
+        @media (min-width: 1200px) {
+            #sum {
+                margin-right: 80rem;
+                margin-top: -5rem;
+                background-color: white;
+            }
         }
         
         #hero {
