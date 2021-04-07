@@ -504,11 +504,40 @@ border-width: 1px;*/
                 color: rgb(255, 255, 255);
                 background-color: #9225a8c2;
                 height: 6.89rem;
-                border-radius: 2rem 0 0 0;
+                margin-right: -15rem;
+                border-radius: 2rem 2rem 0 0;
+            }
+            #Show-name2 {
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 1.3rem;
+            }
+            #up-next-sec-2 {
+                font-family: 'Quicksand', sans-serif !important;
+                color: #00d351;
+                font-size: 2rem;
+                padding-left: 2.7rem;
+                background-color: #9225a8c2;
+                border-radius: 0 2rem 0 0;
+            }
+            #show-reminder {
+                margin-top: -7rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 2rem;
+            }
+            #show-sched {
+                margin-top: 0.2rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 2rem;
+            }
+            .easter {
+                color: #00d351;
+            }
+            .easter:hover {
+                color: #e415c8;
             }
         }
         
-        @media (max-width: 1200px) {
+        @media (max-width: 1199px) {
             #now-playing-full-card {
                 box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #763fa393;
                 border-radius: 2rem 2rem 2rem 2rem;
@@ -553,14 +582,14 @@ border-width: 1px;*/
             #hero #now-playing-card-body {
                 color: rgb(255, 255, 255);
                 background-color: #5f2a87c2;
-                border-radius: 2rem 0 0 2rem;
                 height: 14rem;
             }
             #hero #card-body-card-body {
                 color: rgb(255, 255, 255);
                 background-color: #9225a8c2;
                 height: 6.89rem;
-                border-radius: 2rem 0 0 0;
+                margin-right: -15rem;
+                border-radius: 2rem 2rem 0 0;
             }
             #Show-name {
                 font-size: 1.3rem !important;
@@ -590,8 +619,8 @@ border-width: 1px;*/
                 background: transparent !important;
                 z-index: 25;
                 margin-left: 40rem;
-                margin-top: -23.75rem;
-                padding-bottom: 13rem;
+                margin-top: -17.2rem;
+                padding-bottom: 3rem;
                 /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
                 -webkit-box-flex: 2;
                 flex: 2;
@@ -610,6 +639,165 @@ border-width: 1px;*/
                 padding-left: 2.7rem;
                 background-color: #9225a8c2;
                 border-radius: 0 2rem 0 0;
+            }
+            #Show-name2 {
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 1.3rem;
+            }
+            #show-reminder {
+                margin-top: -7rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 2rem;
+            }
+            #show-sched {
+                margin-top: 0.2rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 2rem;
+            }
+            .easter {
+                color: #00d351;
+            }
+            .easter:hover {
+                color: #e415c8;
+            }
+        }
+        
+        @media (max-width: 800px) {
+            #now-playing-full-card {
+                box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #23123193;
+                border-radius: 0rem 0rem 0rem 0rem;
+            }
+            #hero #now-playing-full-card {
+                background: transparent !important;
+                z-index: 30;
+                margin-left: 20rem;
+                padding-top: 5rem;
+                /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
+                -webkit-box-flex: 2;
+                flex: 2;
+                outline: transparent;
+                /*9ecaed is nice blue*/
+                border-radius: 0rem 0rem 0rem 0rem;
+                border-color: #5F2A87;
+                color: #14110f;
+                box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #763fa393;
+                font-family: 'milocha', 'Lato';
+            }
+            #host-show-card {
+                background: transparent !important;
+            }
+            #hero #up-next-full-card {
+                background: transparent !important;
+                z-index: 25;
+                margin-left: 40rem;
+                margin-top: -7.22rem;
+                padding-top: 10rem;
+                /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
+                -webkit-box-flex: 2;
+                flex: 2;
+                outline: none;
+                /*9ecaed is nice blue*/
+                border-color: #5F2A87;
+                color: #00d351;
+                font-family: 'milocha', 'Lato';
+                margin-right: 16rem;
+                max-height: 6.89rem;
+            }
+            #hero #now-playing-card-body {
+                color: rgb(255, 0, 0);
+                background-color: #5f2a87c2;
+                border-radius: 0rem 0 0 0rem;
+                height: 14rem;
+            }
+            #hero #card-body-card-body {
+                color: rgb(255, 255, 255);
+                background-color: #9225a8c2;
+                height: 6.89rem;
+                width: 20rem;
+                margin-left: 4.5rem;
+                border-radius: 2rem 2rem 0rem 0rem;
+            }
+            #Show-name {
+                font-size: 1.3rem !important;
+            }
+            #Show-time {
+                font-size: 1.3rem !important;
+                margin-top: -2rem;
+            }
+            #listen-mob {
+                margin-left: 2%;
+            }
+            /*     margin-left: 16.5rem;
+          background-color: #00d351;
+          height: 3.4rem;
+          #26553a is nice green
+      border-radius: 0.5rem;
+      border: none;
+      box-shadow: 1px 1px 8px 1px rgba(0,
+      0,
+      0,
+      0.32);
+      color: white;
+  }
+  
+  */
+            #hero #up-next-full-card {
+                background: transparent !important;
+                z-index: 25;
+                margin-left: 40rem;
+                margin-top: -17.2rem;
+                /* IMPORTANT FOR UP NEXT SEC*/
+                padding-bottom: 3rem;
+                /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
+                -webkit-box-flex: 2;
+                flex: 2;
+                outline: none;
+                /*9ecaed is nice blue*/
+                border-color: #5F2A87;
+                color: #00d351;
+                font-family: 'milocha', 'Lato';
+                max-height: 6.89rem;
+            }
+            #up-next-sec-2 {
+                font-family: 'Quicksand', sans-serif !important;
+                color: #00d351;
+                font-size: 1rem;
+                padding-left: none;
+                background-color: #8b32ffc2;
+                border-radius: 0 0 0 0;
+            }
+            #up-next-sec-2-link {
+                font-family: 'Quicksand', sans-serif !important;
+                color: #00d351;
+                font-size: 1rem !important;
+            }
+            #Show-name2 {
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 0.8rem;
+            }
+            #up-next-sec-2 {
+                font-family: 'Quicksand', sans-serif !important;
+                color: #00d351;
+                font-size: 2rem;
+                margin-left: -16rem;
+                padding-left: none;
+                background-color: #9225a8c2;
+            }
+            #show-reminder {
+                margin-top: -5rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 1rem;
+            }
+            #show-sched {
+                margin-top: 2rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 1rem;
+            }
+            .easter {
+                color: #00d351;
+            }
+            .easter:hover {
+                color: #e415c8;
             }
         }
         
@@ -666,11 +854,6 @@ border-width: 1px;*/
             font-size: 2rem;
         }
         
-        #Show-name2 {
-            font-family: 'Quicksand', sans-serif !important;
-            font-size: 1.3rem;
-        }
-        
         #Show-time {
             font-family: 'Quicksand', sans-serif !important;
             font-size: 1.4rem;
@@ -693,15 +876,6 @@ border-width: 1px;*/
             color: #ffffff;
             font-size: 1.8rem;
             font-family: 'Lato' !important;
-        }
-        
-        #up-next-sec-2 {
-            font-family: 'Quicksand', sans-serif !important;
-            color: #00d351;
-            font-size: 2rem;
-            padding-left: 2.7rem;
-            background-color: #9225a8c2;
-            border-radius: 0 2rem 0 0;
         }
         
         #up-next-sec-2-link {

@@ -122,12 +122,15 @@
     <div class="row no-gutters">
       <div class="col-md-8">
         <div class="card-body " id="card-body-card-body">
-          <h5 class="card-title text-center" id="now-playing-upnext-title">UP NEXT</h5>
-          <p class="card-text text-center" id="Show-name2">URN Lockdown - Flora Wordie </p>
+          <h5 class="card-title text-left" id="now-playing-upnext-title">UP NEXT</h5>
+          <p class="card-text text-left" id="Show-name2">URN Lockdown - Flora Wordie </p>
+          <p class="card-text text-right" id="show-reminder"> <a class="easter" href="<?php echo site_url('/schedule'); ?>">  Set Reminder </a></p>
+          <p class="card-text text-right" id="show-sched"> <a class="easter" href="<?php echo site_url('/schedule'); ?>">  Schedule </a></p>
+
         </div>
       </div>
-      <div class="col-md-4" id="up-next-sec-2">
-        <div class="row">
+     <!-- <div class="col-md-4" id="up-next-sec-2">
+        <div class="row no-gutters">
           <div class="col-11.8">
             <div class="text-center" id="remind">
               <a  id="up-next-sec-2-link" href="<?php echo site_url('/schedule'); ?>">  Set Reminder </a>
@@ -138,7 +141,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
         </div> 
       </div>
     </div>
