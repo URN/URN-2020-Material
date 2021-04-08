@@ -46,12 +46,7 @@
       <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?><!-- 
       --><h1 class="website-name ">University Radio Nottingham</h1> 
     </div>
-      <div class="bruh">
-          <a class="nav-link btn " id="bonbon" onclick="window.open('<?php  echo site_url('/stream'); ?>' ,'_blank')">
-            <i class="fas fa-fw fa-play" id="livebutton"></i>
-            <span class="listen-live">Listen Live!</span>
-          </a>
-      </div>
+   
   </div>      <!-- TODO make a popup radio player like university radio york or insanity radio-->
         <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none"  ></audio>
           <script>

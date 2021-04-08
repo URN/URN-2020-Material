@@ -182,14 +182,14 @@
             }
             #slogan {
                 font-size: 0.7rem;
-                margin-top: -6.3rem;
+                margin-top: -4.8rem;
             }
             .neem {
                 padding-left: 0rem;
             }
         }
         
-        @media (max-width: 760px) {
+        @media (max-width: 920) {
             .website-name {
                 font-size: 3vh;
                 /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
@@ -208,19 +208,20 @@
                 height: 6vh;
             }
             #bonbon {
-                width: 8vh !important;
-                height: 1.3rem !important;
-                font-size: 1.2vh;
+                width: 0vh !important;
+                height: 0rem !important;
+                font-size: 0vh;
                 font-family: 'milocha';
-                padding-bottom: 0.4vh;
-                padding-top: 0.8vh;
+                padding-bottom: 0vh;
+                padding-top: 0vh;
                 padding-left: 0vh;
                 padding-right: 0vh;
-                margin-left: -15.7rem;
+                margin-left: 0rem;
+                margin-top: 0rem;
             }
             .bruh {
-                padding-top: 6vh;
-                padding-bottom: 8vh;
+                padding-top: 0vh;
+                padding-bottom: 0vh;
             }
             #sum {
                 position: absolute;
@@ -242,8 +243,9 @@
                 visibility: none !important;
             }
             #slogan {
-                font-size: 0.7rem;
-                margin-top: -6.4rem;
+                font-size: 0rem;
+                margin-top: 0rem;
+                visibility: hidden;
             }
             .neem {
                 padding-left: 0rem;
@@ -297,6 +299,7 @@
             .toggle {
                 font-family: 'milocha', 'Lato', sans-serif;
                 font-size: 0.5rem;
+                margin-top: -8rem;
                 color: white;
                 visibility: none !important;
             }
@@ -307,8 +310,9 @@
                 visibility: none !important;
             }
             #slogan {
-                font-size: 0.4rem;
-                margin-top: -6.4rem;
+                font-size: 0rem;
+                margin-top: 0rem;
+                visibility: hidden;
                 margin-left: 0.7rem;
             }
             .neem {
