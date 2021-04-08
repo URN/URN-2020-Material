@@ -196,9 +196,13 @@
   <!-- Image Showcases -->
   <div class="your-urn-section">
 
+
+
+  <div class="d-flex justify-content-center">
   <div class="row justify-content-center" id="whiteness">
           <h1 class="entry-title-alt">YOUR URN</h1>
-      </div>
+      </div></div>
+
   <section class="showcase" id="whiteness">
 <div class="row" id="whiteness">
 <div class="col" >
@@ -262,10 +266,13 @@
   
 
   <!-- Testimonials -->
+  <div class="d-flex justify-content-center">
+
   <div class="row justify-content-center" id="front-testi">
 
           <h1 class="entry-title">HOW TO GET INVOLVED</h1>
       </div>
+          </div>
   <section class="testimonials text-center bg-light">
     <div class="container">
       <div class="row">
