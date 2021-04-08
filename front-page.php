@@ -70,11 +70,15 @@
         <div class="col-md-8">
           <div class="card-body " id="now-playing-card-body">
             <h5 class="card-title text-center" id="now-playing-upnext-title">NOW PLAYING</h5>
-            <p class="card-text text-center" id="Show-name">The URN Show - Kathryn Embree</p>
-            <p class="card-text" ><div class="text-muted"id="Show-time">11am-12am</div></p>
-            <button class="right-button" id="contact-presenters"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
+                                            <h1 class="show-title-name">URN Live</h1>
+                                            <h3 class="show-title-time">24/7</h3>
+                                            <button class="right-button" id="contact-presenters"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
             <button class="right-button" id="listen-mob"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> LISTEN LIVE</a> </button>
 
+
+ 
+          
+         
           </div>
         </div>
       <div class="col-md-4">
@@ -116,19 +120,18 @@
  </div> 
 </div>
 </div>
-
-<div class="container">
+<!-- <div class="container">
   <div class="card mx-auto " style="max-width: 740px;" id= "up-next-full-card">
     <div class="row no-gutters">
       <div class="col-md-8">
         <div class="card-body " id="card-body-card-body">
           <h5 class="card-title text-left" id="now-playing-upnext-title">UP NEXT</h5>
-          <p class="card-text text-left" id="Show-name2">URN Lockdown - Flora Wordie </p>
-          <p class="card-text text-right" id="show-reminder"> <a class="easter" href="<?php echo site_url('/schedule'); ?>">  Set Reminder </a></p>
-          <p class="card-text text-right" id="show-sched"> <a class="easter" href="<?php echo site_url('/schedule'); ?>">  Schedule </a></p>
+          <p class="card-text text-left" id="Show-name2">URN Lockdown - Flora Wordiefdfdfdfdfdfdfdfdfdfdfdrerererererer nkngkfngkfjkgfkgfk gfgnfkngkfkgf fngkjfkgkfg gfkgfkgjkfkfjgg fgkjfkj</p>-->
+          <!-- <p class="card-text text-right" id="show-reminder"> <a class="easter" href="<?php echo site_url('/schedule'); ?>">  Set Reminder </a></p>
+          <p class="card-text text-right" id="show-sched"> <a class="easter" href="<?php echo site_url('/schedule'); ?>">  Schedule </a></p>-->
 
-        </div>
-      </div>
+      <!--  </div>
+      </div>-->
      <!-- <div class="col-md-4" id="up-next-sec-2">
         <div class="row no-gutters">
           <div class="col-11.8">
@@ -142,14 +145,14 @@
               </div>
             </div>
           </div>-->
-        </div> 
+       <!-- </div> 
       </div>
     </div>
   </div>
               </div>
   
 
-
+              -->
     <!-- ⟶ -->
 
   
@@ -193,14 +196,14 @@
   <!-- Image Showcases -->
   <div class="your-urn-section">
 
-  <div class="row justify-content-center">
+  <div class="row justify-content-center" id="whiteness">
           <h1 class="entry-title-alt">YOUR URN</h1>
       </div>
-  <section class="showcase">
-<div class="row">
-<div class="col">
+  <section class="showcase" id="whiteness">
+<div class="row" id="whiteness">
+<div class="col" >
   
-<?php if(have_posts()) : while(have_posts()) : the_post();?>
+  <?php if(have_posts()) : while(have_posts()) : the_post();?>
   <?php endwhile; else: endif;?>
 
   <?php
@@ -216,25 +219,26 @@
     ?>
 
     <?php if($_posts->have_posts()):?>
-    <div class="row mt-5">
-      <?php while ($_posts->have_posts()): $_posts->the_post();?>
+      <div class="row mt-5"  >
+        <?php while ($_posts->have_posts()): $_posts->the_post();?>
 
-      <div class="col-lg-4">
+        <div class="col-lg-4" >
 
-      <?php if(has_post_thumbnail()):?>
-      <a href="<?php the_permalink();?>">
-      <div class="container">
-      <div class="text-center">
-        <img src="<?php the_post_thumbnail_url('thumb_image');?>" class= "img-fluid mb-2" alt="<?php the_title();?>">
-        </a>
-        </div>
+          <?php if(has_post_thumbnail()):?>
+          <a href="<?php the_permalink();?>">
+        <div class="container" >
+          <div class="text-center" >
+            <img src="<?php the_post_thumbnail_url('thumb_image');?>" class= "img-fluid mb-2 ml-3" alt="<?php the_title();?>">
+          </a>
+          </div>
         <?php endif?>
 
-      <a href="<?php the_permalink();?>">
-        <h1 class="post_title"><?php the_title();?> </h1>
-        </a>
-        <h4 class="post_excerpt"><?php the_excerpt();?></h4>
-        </div></div>
+          <a href="<?php the_permalink();?>">
+            <h1 class="post_title"><?php the_title();?> </h1>
+          </a>
+          <h4 class="post_excerpt" id="mal"><?php the_excerpt();?></h4>
+        </div>
+      </div>
 
       <?php endwhile;?>
 

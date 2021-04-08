@@ -94,7 +94,7 @@
 </div>
 
   <div class="header">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="whiteness">
 
 
       <nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->

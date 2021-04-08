@@ -122,7 +122,7 @@
         
         #slogan {
             font-family: 'milocha', 'Quicksand', 'Lato';
-            padding-top: 7vh;
+            padding-top: 9.2vh;
             font-size: 3vh;
             text-align: center;
             color: rgb(233, 233, 233);
@@ -434,7 +434,7 @@ border-width: 1px;*/
         }
         
         #hero video {
-            height: 100vh;
+            height: 30rem;
             width: 100%;
             background-position: absolute;
             z-index: 10;
@@ -444,7 +444,7 @@ border-width: 1px;*/
         
         #hero .content {
             /*background: rgba(214, 192, 192, 0.5);*/
-            height: 100%;
+            height: 30rem;
             width: 100%;
             z-index: 20;
             position: absolute;
@@ -482,7 +482,7 @@ border-width: 1px;*/
                 background: transparent !important;
                 z-index: 25;
                 margin-left: 40rem;
-                margin-top: -7.22rem;
+                margin-top: -10.22rem;
                 /* background: linear-gradient(191deg, rgba(95, 42, 135, 1) 27%, rgba(218, 61, 217, 1) 100%);*/
                 -webkit-box-flex: 2;
                 flex: 2;
@@ -503,13 +503,17 @@ border-width: 1px;*/
             #hero #card-body-card-body {
                 color: rgb(255, 255, 255);
                 background-color: #9225a8c2;
-                height: 6.89rem;
                 margin-right: -15rem;
                 border-radius: 2rem 2rem 0 0;
+                padding-bottom: 2rem;
             }
             #Show-name2 {
                 font-family: 'Quicksand', sans-serif !important;
                 font-size: 1.3rem;
+                overflow: hidden;
+                white-space: nowrap;
+                font-size: 2rem;
+                text-overflow: ellipsis;
             }
             #up-next-sec-2 {
                 font-family: 'Quicksand', sans-serif !important;
@@ -592,7 +596,8 @@ border-width: 1px;*/
                 border-radius: 2rem 2rem 0 0;
             }
             #Show-name {
-                font-size: 1.3rem !important;
+                /*font-size: 1.3rem !importa
+                nt;*/
             }
             #Show-time {
                 font-size: 1.3rem !important;
@@ -718,7 +723,7 @@ border-width: 1px;*/
                 border-radius: 2rem 2rem 0rem 0rem;
             }
             #Show-name {
-                font-size: 1.3rem !important;
+                /*   font-size: 1.3rem !important;*/
             }
             #Show-time {
                 font-size: 1.3rem !important;
@@ -801,6 +806,55 @@ border-width: 1px;*/
             }
         }
         
+        @media (max-width: 500px) {
+            #hero #card-body-card-body {
+                color: rgb(255, 255, 255);
+                background-color: #9225a8c2;
+                height: 6.89rem;
+                width: 20rem;
+                margin-left: 2.5rem;
+                border-radius: 2rem 2rem 0rem 0rem;
+            }
+            #footer-slogan {
+                visibility: hidden;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            #hero #card-body-card-body {
+                color: rgb(255, 255, 255);
+                background-color: #9225a8c2;
+                height: 6.89rem;
+                width: 15rem;
+                margin-left: 3.1rem;
+                border-radius: 2rem 2rem 0rem 0rem;
+            }
+            #show-reminder {
+                margin-top: -5rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 1rem;
+            }
+            #show-sched {
+                margin-top: 2rem;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 1rem;
+            }
+            #now-playing-upnext-title {
+                font-family: 'Quicksand', sans-serif !important;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+        
+        #whiteness {
+            width: 100% !important;
+        }
+        
+        #front-testi {
+            width: 100% !important;
+        }
+        
         #listen-mob {
             background-color: #00d351;
             box-align: right;
@@ -850,8 +904,8 @@ border-width: 1px;*/
         }
         
         #Show-name {
-            font-family: 'Quicksand', sans-serif !important;
-            font-size: 2rem;
+            /*           font-family: 'Quicksand', sans-serif !important;
+            font-size: 2rem;*/
         }
         
         #Show-time {
@@ -1499,6 +1553,7 @@ width: 100%;
         
         .your-urn-section {
             background-color: #5F2A87;
+            margin-top: -2rem;
         }
         
         html {
@@ -2368,11 +2423,6 @@ padding-bottom: 0.6rem;*/
         }
         /*******************************************************************************/
         
-        .show-title-name {
-            font-family: 'quicksand', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-            color: white;
-        }
-        
         .show-title-prelude {
             font-family: 'quicksand', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
             overflow-y: hidden;
@@ -2380,9 +2430,12 @@ padding-bottom: 0.6rem;*/
         }
         
         .show-title-name {
-            font-family: 'quicksand', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-            overflow-y: hidden;
+            font-family: 'milocha', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
             color: white;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 2rem;
+            text-overflow: ellipsis;
         }
         
         .show-title-time {
@@ -2461,4 +2514,21 @@ padding-bottom: 0.6rem;*/
             width: 200px;
             height: 25px;
             background-color: #95B9C7;
+        }
+        
+        #mal {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important;
+        }
+        
+        #mal::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        
+        #mal {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
         }
