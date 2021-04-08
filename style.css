@@ -255,25 +255,30 @@
         
         @media (max-width: 490px) {
             .website-name {
-                font-size: 3vh;
+                font-size: 0vh;
                 /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
                 font-family: 'milocha', 'Quicksand', 'Lato';
                 color: #ffffff;
-                margin-right: 1vh;
-                margin-top: -1.8rem;
+                margin-right: 0vh;
+                margin-top: 0rem;
+                visibility: none;
                 /*margin-left: 540px;*/
             }
             .title-logo {
-                height: 1.8rem;
-                margin-left: -0.5rem;
+                height: 8rem;
+                margin-left: -10rem;
+                margin-top: 0rem;
+                padding-bottom: 1rem;
             }
             .title-sra {
                 height: 6vh;
+                visibility: hidden;
             }
             .title-uon {
-                height: 6vh;
+                height: 0vh;
                 padding-left: none;
-                margin-left: -30%;
+                margin-left: 0rem;
+                visibility: hidden;
             }
             #slogan {
                 margin-top: -4.5rem;
