@@ -10,12 +10,12 @@
 <?php $minimise = is_home() || is_page( 'stream' ) ? '' : 'display: none;' ?>
 <?php $minimiseT = is_home() ? 'Shrink' : 'Expand' ?>
 <?php $btn = is_page( 'stream' ) ? 'display: none;' : '' ?>
-<div id="listen-now">   
+<div id="listen-now" >   
     
     <div class="show-container" id="streams" style="<?php echo $minimise; ?>">
         <div class="content ">
             <div class="container">
-                <div class="card mx-auto " style="max-width: 840px;" id= "now-playing-full-card">
+                <div class="card mx-auto "  style= "background: transparent; max-width: 840px;" id= "now-playing-full-card">
                     <div class="row no-gutters">
                         <div class="col-md-8">
                             <div class="card-body " id="now-playing-card-body2">
@@ -35,7 +35,7 @@
                         
                     <div class="col-md-4" >
 
-                        <span  alt=""  class="show-image" alt="..." id="presenterIMG">
+                        <span  alt=""  class="show-image" alt="<?php echo get_template_directory_uri(); ?>/img/grp.jpg" id="presenterIMG"> <img class="img-fluid rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/img/grp.jpg" alt=""> </span>
                             <div class="card-img-overlay">
                                 <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
                                     <script>

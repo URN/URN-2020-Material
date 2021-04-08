@@ -2462,20 +2462,3 @@ padding-bottom: 0.6rem;*/
             height: 25px;
             background-color: #95B9C7;
         }
-        
-        #mal {
-            overflow-x: hidden !important;
-            overflow-y: hidden !important;
-        }
-        
-        #mal::-webkit-scrollbar {
-            display: none;
-        }
-        /* Hide scrollbar for IE, Edge and Firefox */
-        
-        #mal {
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
-        }
