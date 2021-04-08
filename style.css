@@ -265,10 +265,14 @@
                 /*margin-left: 540px;*/
             }
             .title-logo {
+                margin: 0 auto;
                 height: 8rem;
-                margin-left: -10rem;
+                margin-right: 3rem;
                 margin-top: 0rem;
+                padding-right: none;
                 padding-bottom: 1rem;
+                display: flex;
+                justify-content: center;
             }
             .title-sra {
                 height: 6vh;
@@ -282,8 +286,9 @@
             }
             #slogan {
                 margin: 0 auto;
-                margin-top: -4.5rem;
+                margin-top: -5.5rem;
                 display: flex;
+                font-size: 1rem;
                 justify-content: center;
             }
             #sum {
