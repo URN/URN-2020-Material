@@ -280,8 +280,15 @@
                 margin-left: 0rem;
                 visibility: hidden;
             }
-            #slogan {}
+            #slogan {
+                margin: 0 auto;
+                margin-top: -4.5rem;
+                display: flex;
+                justify-content: center;
+            }
             #sum {
+                display: flex;
+                justify-content: center;
                 padding-left: 1.25rem;
             }
             .toggle {
