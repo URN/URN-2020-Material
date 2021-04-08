@@ -72,8 +72,8 @@
             <h5 class="card-title text-center" id="now-playing-upnext-title">NOW PLAYING</h5>
                                             <h1 class="show-title-name">URN Live</h1>
                                             <h3 class="show-title-time">24/7</h3>
-                                            <button class="right-button" id="contact-presenters"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
-            <button class="right-button" id="listen-mob"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> LISTEN LIVE</a> </button>
+                                            <button class="right-button" id="contact-presenters"> <a class="presenter-link" href="<?php echo site_url('/schedule'); ?>"> FULL SCHEDULE </a> </button>
+            <button class="right-button" id="listen-mob"> <a class="presenter-link" href="<?php echo site_url('/stream'); ?>" target="_blank"> LISTEN LIVE</a> </button>
 
 
  

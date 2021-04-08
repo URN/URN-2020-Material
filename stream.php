@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Stream
+* Template Name: stream
 * Description: Page to listen to the stream live
 */
 show_admin_bar(false);

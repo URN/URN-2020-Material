@@ -171,13 +171,13 @@
             .toggle {
                 font-family: 'milocha', 'Lato', sans-serif;
                 font-size: 0.8rem;
-                color: white;
+                color: rgb(199, 199, 199);
                 visibility: none !important;
             }
             .toggle:hover {
                 font-family: 'milocha', 'Lato', sans-serif;
                 font-size: 0.8rem;
-                color: #5F2A87;
+                color: #ffffff;
                 visibility: none !important;
             }
             #slogan {
