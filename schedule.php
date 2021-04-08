@@ -30,7 +30,7 @@
       <?php  } ?>
 
             <article id="post-<?php the_ID();?>" <?php post_class();?>>
-                <header class="entry-header">
+                <header class="d-flex justify-content-center">
                  
                         <?php the_title('    <div class="text-center"> <h1 class="entry-title">','</h1> </div>');?>
                     </div>

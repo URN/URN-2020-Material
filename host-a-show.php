@@ -43,7 +43,7 @@ get_header(); ?>
 
   <article id="post-<?php the_ID();?>" <?php post_class();?>>
     <header class="entry-header">
-      <?php the_title('    <div class="text-center"> <h1 class="entry-title-alt">','</h1> </div>');?>
+      <?php the_title('    <div class="d-flex justify-content-center"> <h1 class="entry-title-alt">','</h1> </div>');?>
     </header>
  </div>
  </div>
