@@ -280,12 +280,9 @@
                 margin-left: 0rem;
                 visibility: hidden;
             }
-            #slogan {
-                margin-top: -4.5rem;
-                margin-left: -1rem;
-            }
+            #slogan {}
             #sum {
-                margin-left: -0.25rem;
+                padding-left: 1.25rem;
             }
             .toggle {
                 border-radius: 2rem;
@@ -295,7 +292,7 @@
         }
         
         .header .navbar {
-            background: #00d351;
+            background: transparent;
             /*height: 35px; NEVER PUTHIEGHT HERE BECAUSE DROP DOWN STOPS WORKING*/
             font-family: 'Quicksand', 'milocha', 'Lato';
         }
