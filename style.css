@@ -177,7 +177,7 @@
             .toggle:hover {
                 font-family: 'milocha', 'Lato', sans-serif;
                 font-size: 0.8rem;
-                color: #00d351;
+                color: #5F2A87;
                 visibility: none !important;
             }
             #slogan {
@@ -282,17 +282,26 @@
             }
             #slogan {
                 margin-top: -4.5rem;
+                margin-left: -1rem;
+            }
+            #sum {
+                margin-left: -0.25rem;
+            }
+            .toggle {
+                border-radius: 2rem;
+                border-width: 2rem;
+                border-radius: 12rem;
             }
         }
         
         .header .navbar {
-            background-color: #5F2A87;
+            background: #00d351;
             /*height: 35px; NEVER PUTHIEGHT HERE BECAUSE DROP DOWN STOPS WORKING*/
             font-family: 'Quicksand', 'milocha', 'Lato';
         }
         
         .header-background {
-            background-color: #5F2A87;
+            background: linear-gradient(310deg, rgba(228, 21, 200, 1) 0%, rgba(95, 42, 135, 1) 69%);
             height: fit-content;
             /* not needed i think*/
         }
@@ -344,7 +353,7 @@ border-width: 1px;*/
         }
         
         .header .navbar .head-menu-text a:hover {
-            color: #00d351;
+            color: #ffffff;
             border: 0;
             text-decoration: underline;
         }
