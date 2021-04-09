@@ -2417,22 +2417,58 @@ padding-bottom: 0.6rem;*/
             font-size: 3rem;
         }
         
+        @media (max-width: 465px) {
+            #card-stream-title {
+                font-size: 1rem;
+            }
+            .smol-stream-img {
+                width: 1rem;
+                margin-top: -6.9rem;
+                margin-left: 2.3rem;
+            }
+            .kill {
+                margin-left: 40%;
+            }
+            .textbox {
+                width: 9rem;
+                margin-top: 4.3rem;
+            }
+        }
+        
+        @media (min-width: 466px) {
+            #card-stream-title {
+                font-size: 3rem;
+            }
+            .smol-stream-img {
+                width: 3rem;
+                margin-top: -13.7rem;
+                margin-left: 6.3rem;
+            }
+            .kill {
+                margin-left: 60%;
+            }
+            .textbox {
+                width: 11rem;
+                margin-top: 0.3rem;
+            }
+        }
+        
         #message-the-studio {
             margin-top: -10rem;
         }
         
-        .kill {
-            margin-left: 100%;
-        }
-        
-        .textbox {
-            width: 25rem;
-        }
-        
-        .smol-stream-img {
-            width: 3rem;
-            margin-top: -14rem;
-            margin-left: 6.7rem;
+        @media (min-width: 768px) {
+            .smol-stream-img {
+                width: 3rem;
+                margin-top: -14rem;
+                margin-left: 6.7rem;
+            }
+            .kill {
+                margin-left: 100%;
+            }
+            .textbox {
+                width: 25rem;
+            }
         }
         
         .stream {
