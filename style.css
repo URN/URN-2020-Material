@@ -96,6 +96,14 @@
             color: white;
         }
         
+        .navbar-brand {
+            color: white !important;
+        }
+        
+        .navbar-brand::after {
+            color: white !important;
+        }
+        
         @media (max-width: 768px) {
             .title-uon {
                 height: 2rem;
@@ -1537,6 +1545,7 @@ width: 100%;
         
         .involved-btn {
             padding-top: 3rem;
+            padding-bottom: 3rem;
         }
         
         .showcase .showcase-text {
