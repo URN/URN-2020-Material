@@ -62,7 +62,7 @@
     </div>
   
 
-    <div class="row justify-content-center" >
+    <div class="row justify-content-center" id="whiteness" >
 
                         <h2 id="footer-slogan">Your Music. Your News. Your Student Radio.</h2>
 </div>

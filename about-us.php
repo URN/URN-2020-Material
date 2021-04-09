@@ -31,7 +31,7 @@ get_header(); ?>
                 
 
             ?> 
-            <div class="row">
+            <div class="row" id="whiteness">
                 <div class="col">
 
                 <?php 
@@ -44,7 +44,7 @@ get_header(); ?>
       <?php  } ?>
 
             <article id="post-<?php the_ID();?>" <?php post_class();?>>
-                <header class="entry-header">
+                <header class="entry-header ">
                  
                         <?php the_title('    <div class="text-center"> <h1 class="verticaltext_content">','</h1> </div>');?>
                     </div>

@@ -2186,46 +2186,106 @@ padding-bottom: 0.6rem;*/
             min-height: 120px;
         }
         
-        .verticaltext_content {
-            -webkit-transform: rotate(-90deg);
-            -moz-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
-            -o-transform: rotate(-90deg);
-            filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
-            left: -40px;
-            top: 35px;
-            position: absolute;
-            color: #bdbdbd;
-            text-transform: uppercase;
-            font-size: 26px;
-            padding-top: 10rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            padding-bottom: 0.5rem;
-            border-radius: 2rem;
-            font-weight: bold;
-            background-color: #5F2A87;
+        @media (max-width: 799px) {
+            .verticaltext_content {
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                font-family: 'milocha', 'Quicksand', 'Lato';
+                filter: none;
+                left: 0px;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 26px;
+                padding-top: 0rem;
+                padding-right: 0rem;
+                padding-left: 0rem;
+                padding-bottom: 0rem;
+                border-radius: 0rem;
+                font-weight: bold;
+                background-color: transparent;
+                position: fixed;
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                /* center the div */
+                right: 0;
+                left: 0;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 2rem;
+                /* give it dimensions */
+                width: 90%;
+                /* just for example presentation */
+            }
+            .verticaltext_content_alt {
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                filter: none;
+                left: -0rem;
+                top: 0rem;
+                position: absolute;
+                color: #bdbdbd;
+                text-transform: uppercase;
+                font-size: 26px;
+                padding-top: 0rem;
+                padding-left: 0rem;
+                padding-right: 0rem;
+                padding-bottom: 0rem;
+                border-radius: 0rem;
+                font-weight: bold;
+                background-color: #5F2A87;
+            }
+            .entry-header {
+                padding-bottom: 4rem;
+                padding-left: 1rem;
+                padding-left: 10rem;
+            }
         }
         
-        .verticaltext_content_alt {
-            -webkit-transform: rotate(90deg);
-            -moz-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            -o-transform: rotate(90deg);
-            filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
-            left: -40px;
-            top: 35px;
-            position: absolute;
-            color: #bdbdbd;
-            text-transform: uppercase;
-            font-size: 26px;
-            padding-top: 10rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            padding-bottom: 0.5rem;
-            border-radius: 2rem;
-            font-weight: bold;
-            background-color: #5F2A87;
+        @media (min-width: 799px) {
+            .verticaltext_content {
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+                left: -40px;
+                top: 35px;
+                position: absolute;
+                color: #e415c8;
+                text-transform: uppercase;
+                font-size: 26px;
+                padding-top: 10rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 0.5rem;
+                border-radius: 2rem;
+                font-weight: bold;
+                background-color: white;
+            }
+            .verticaltext_content_alt {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+                left: -40px;
+                top: 35px;
+                position: absolute;
+                color: #bdbdbd;
+                text-transform: uppercase;
+                font-size: 26px;
+                padding-top: 10rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 0.5rem;
+                border-radius: 2rem;
+                font-weight: bold;
+                background-color: #5F2A87;
+            }
         }
         
         .jumbotron {
@@ -2354,6 +2414,7 @@ padding-bottom: 0.6rem;*/
         
         .main-page-content {
             background: url(ugh.png) no-repeat center center;
+            background-size: cover;
         }
         
         .urn-banner {
