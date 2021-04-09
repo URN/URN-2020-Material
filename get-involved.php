@@ -74,7 +74,8 @@ get_header(); ?>
 
 
   <!-- Image Showcases -->
-  <div class="row justify-content-center">
+  <div id="white-urn-back">
+  <div class="row justify-content-center" id="whiteness">
 
           <h1 class="entry-title">GET INVOLVED</h1>
       </div>
@@ -84,7 +85,7 @@ get_header(); ?>
 <div class="col">
 <p>URN aims to provide our listeners with your news, music and content. We thrive in motivating and providing a platform for upcomming stars to help create a platform to share all our perspectives, ideas and music. Whether your an aspiring muscisian, presenter or want to join the Tech Team, there is always opportunity. See the below links for more information on who to contact!</p>
 </div>
-
+</div>
                     </div>
                     </div>
  
