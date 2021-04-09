@@ -44,6 +44,14 @@
             padding-right: 0.5rem;
         }
         
+        #palp {
+            padding-bottom: 1rem;
+        }
+        
+        #ana {
+            padding-bottom: 1rem;
+        }
+        
         .title-sra {
             height: 2rem;
         }
@@ -110,7 +118,7 @@
             .title-sra {
                 height: 2rem;
                 float: right;
-                margin-top: -2rem;
+                margin-top: -3rem;
             }
             .website-name {
                 font-family: 'milocha', 'Lato';
@@ -148,7 +156,7 @@
             .title-sra {
                 height: 2rem;
                 float: right;
-                margin-top: -2rem;
+                margin-top: -3rem;
             }
             .website-name {
                 font-family: 'milocha', 'Lato';

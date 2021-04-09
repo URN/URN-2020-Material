@@ -43,7 +43,7 @@
       <div class="col-md" id="palp">
         <?php   echo '<img class="title-uon" src="' . get_bloginfo('template_directory') . '/img/uon.png" />'; ?>
       </div>
-      <div class="col-md">
+      <div class="col-md" id="ana">
         <?php   echo '<img class="title-sra" src="' . get_bloginfo('template_directory') . '/img/sra.png" />'; ?>
       </div>
     </div>
