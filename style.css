@@ -40,286 +40,140 @@
         }
         
         .title-logo {
-            height: 5rem;
-            padding-right: 2vh;
-            display: inline-block;
-            margin-top: -3rem;
+            height: 3rem;
+            padding-right: 0.5rem;
         }
         
         .title-sra {
-            padding-top: 2rem;
-            height: 5rem;
-            padding-left: 1rem;
-            padding-right: 4vh;
+            height: 2rem;
         }
         
         .title-uon {
-            padding-top: 2rem;
-            margin-left: -27%;
-            height: 5rem;
-            padding-left: 1rem;
+            height: 2rem;
+            float: right;
+        }
+        
+        #palp {
+            float: right;
         }
         
         .neem {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-        
-        #hayday {
-            margin-left: 5rem;
+            display: flex;
         }
         
         .website-name {
+            font-family: 'milocha', 'Lato';
             font-size: 3rem;
+            display: flex;
+            margin: 0 auto;
             /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
-            font-family: 'milocha', 'Quicksand', 'Lato';
+            font-family: 'milocha', 'Lato';
             color: #ffffff;
+            display: block;
             /*margin-left: 540px;*/
-            padding-top: 2vh;
-            padding-right: 4vh;
-            display: inline-block;
         }
         
-        #livebutton2 {
-            padding-right: 2.4rem;
-            margin-top: 5px;
+        #slogan {
+            font-size: 1rem;
+            display: flex;
+            margin: 0 auto;
+            /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+            font-family: 'milocha', 'Lato';
             color: #ffffff;
+            justify-content: center;
+            /*margin-left: 540px;*/
         }
         
-        .bruh {
-            padding-top: 2vh;
-            padding-bottom: 4vh;
+        .toggle {
+            color: white;
         }
         
-        #livebutton2:hover {
-            padding-right: 2.4rem;
-            margin-top: 5px;
-            color: #bebebe;
-        }
-        
-        #bonbon {
-            width: 24vh !important;
-            height: 5vh !important;
-            font-size: 2.5vh;
-            font-family: 'milocha';
-            padding-bottom: 5vh;
-            margin-right: -8vh;
-        }
-        /*    @media (min-width: 1200px) {
-            .listen-live-top {
-                margin-left: 58rem;
-                margin-top: -4.5rem;
-                padding-bottom: 2rem;
-            }
-        }
-        
-      @media (max-width: 1200px) {
-            .listen-live-top {
-                margin-left: 1rem;
-                padding-bottom: 1rem;
-            }
-        }*/
-        
-        @media (min-width: 1201px) {
-            #slogan {
-                font-family: 'milocha', 'Quicksand', 'Lato';
-                padding-top: 12.2vh;
-                font-size: 1rem;
-                text-align: center;
-                color: rgb(233, 233, 233);
-                margin-top: -6.3rem;
-            }
-        }
-        
-        @media (max-width: 1200px) {
-            .website-name {
-                font-size: 3rem;
-                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
-                font-family: 'milocha', 'Quicksand', 'Lato';
-                color: #ffffff;
-                margin-right: 1vh;
-                /*margin-left: 540px;*/
-            }
-            .title-logo {
-                padding-top: 2rem;
-                height: 5rem;
-                padding-right: 2vh;
-                display: inline-block;
-                margin-top: -6.5rem;
+        @media (max-width: 768px) {
+            .title-uon {
+                height: 2rem;
+                float: left;
+                display: inline;
             }
             .title-sra {
-                padding-top: 2rem;
-                height: 5rem;
-                padding-left: 1rem;
-                padding-right: 4vh;
-                margin-top: -1rem;
-            }
-            .title-uon {
-                padding-top: 2rem;
-                margin-left: -27%;
-                height: 5rem;
-                padding-left: 1rem;
-                margin-top: -1rem;
-            }
-            #bonbon {
-                width: 8vh !important;
-                height: 1.9rem !important;
-                font-size: 1.2vh;
-                font-family: 'milocha';
-                padding-bottom: 0.4vh;
-                padding-top: 0.8vh;
-                padding-left: 0vh;
-                padding-right: 0vh;
-            }
-            .bruh {
-                padding-top: 2vh;
-                padding-bottom: 7vh;
-            }
-            #sum {
-                position: absolute;
-                top: 5rem;
-                height: 0.8rem;
-                margin-right: 80rem;
-                margin-top: -5rem;
-            }
-            .toggle {
-                font-family: 'milocha', 'Lato', sans-serif;
-                font-size: 0.8rem;
-                color: rgb(199, 199, 199);
-                visibility: none !important;
-            }
-            .toggle:hover {
-                font-family: 'milocha', 'Lato', sans-serif;
-                font-size: 0.8rem;
-                color: #ffffff;
-                visibility: none !important;
-            }
-            #slogan {
-                font-size: 0.7rem;
-                margin-top: -3.8rem;
-                font-family: 'milocha', 'Quicksand', 'Lato';
-                padding-top: 12.2vh;
-                font-size: 3vh;
-                text-align: center;
-                color: rgb(233, 233, 233);
-                margin-top: -5.5rem;
-            }
-            .neem {
-                padding-left: 0rem;
+                height: 2rem;
+                float: right;
+                margin-top: -2rem;
             }
         }
         
-        @media (max-width: 920px) {
-            .website-name {
-                font-size: 3vh;
-                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
-                font-family: 'milocha', 'Quicksand', 'Lato';
-                color: #ffffff;
-                margin-right: 1vh;
-                /*margin-left: 540px;*/
-            }
-            .title-logo {
-                height: 2.8rem;
+        @media (max-width: 635px) {
+            .title-uon {
+                height: 2rem;
+                float: left;
+                display: inline;
             }
             .title-sra {
-                height: 6vh;
+                height: 2rem;
+                float: right;
+                margin-top: -2rem;
             }
-            .title-uon {
-                height: 6vh;
-            }
-            #bonbon {
-                width: 0vh !important;
-                height: 0rem !important;
-                font-size: 0vh;
-                font-family: 'milocha';
-                padding-bottom: 0vh;
-                padding-top: 0vh;
-                padding-left: 0vh;
-                padding-right: 0vh;
-                margin-left: 0rem;
-                margin-top: 0rem;
-            }
-            .bruh {
-                padding-top: 0vh;
-                padding-bottom: 0vh;
-            }
-            #sum {
-                position: absolute;
-                top: 5rem;
-                height: 0.8rem;
-                margin-right: 80rem;
-                margin-top: -5rem;
-            }
-            .toggle {
-                font-family: 'milocha', 'Lato', sans-serif;
-                font-size: 0.8rem;
-                color: white;
-                visibility: none !important;
-            }
-            .toggle:hover {
-                font-family: 'milocha', 'Lato', sans-serif;
-                font-size: 0.8rem;
-                color: #00d351;
-                visibility: none !important;
-            }
-            #slogan {
-                font-size: 0rem;
-                margin-top: 0rem;
-                visibility: hidden;
-            }
-            .neem {
-                padding-left: 0rem;
-                margin-left: -2rem;
-            }
-        }
-        
-        @media (max-width: 490px) {
             .website-name {
-                font-size: 0vh;
-                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
-                font-family: 'milocha', 'Quicksand', 'Lato';
-                color: #ffffff;
-                margin-right: 0vh;
-                margin-top: 0rem;
-                visibility: none;
-                /*margin-left: 540px;*/
-            }
-            .title-logo {
+                font-family: 'milocha', 'Lato';
+                font-size: 1.5rem;
+                display: flex;
                 margin: 0 auto;
-                height: 8rem;
-                margin-right: 3rem;
-                margin-top: 0rem;
-                padding-right: none;
-                padding-bottom: 1rem;
-                display: flex;
-                justify-content: center;
+                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+                font-family: 'milocha', 'Lato';
+                color: #ffffff;
+                display: block;
+                /*margin-left: 540px;*/
             }
-            .title-sra {
-                height: 6vh;
-                visibility: hidden;
-            }
-            .title-uon {
-                height: 0vh;
-                padding-left: none;
-                margin-left: 0rem;
-                visibility: hidden;
+            .title-logo {
+                height: 1.5rem;
+                padding-right: 0.5rem;
             }
             #slogan {
+                font-size: 0.75rem;
+                display: flex;
                 margin: 0 auto;
-                margin-top: -5.5rem;
-                display: flex;
+                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+                font-family: 'milocha', 'Lato';
+                color: #ffffff;
+                justify-content: center;
+                /*margin-left: 540px;*/
+            }
+        }
+        
+        @media (max-width: 331px) {
+            .title-uon {
+                height: 2rem;
+                float: left;
+                display: inline;
+            }
+            .title-sra {
+                height: 2rem;
+                float: right;
+                margin-top: -2rem;
+            }
+            .website-name {
+                font-family: 'milocha', 'Lato';
                 font-size: 1rem;
-                justify-content: center;
-            }
-            #sum {
                 display: flex;
-                justify-content: center;
-                padding-left: 1.25rem;
+                margin: 0 auto;
+                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+                font-family: 'milocha', 'Lato';
+                color: #ffffff;
+                display: block;
+                /*margin-left: 540px;*/
             }
-            .toggle {
-                border-radius: 2rem;
-                border-width: 2rem;
-                border-radius: 12rem;
+            .title-logo {
+                height: 1rem;
+                padding-right: 0.1rem;
+            }
+            #slogan {
+                font-size: 0.5rem;
+                display: flex;
+                margin: 0 auto;
+                /* box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);*/
+                font-family: 'milocha', 'Lato';
+                color: #ffffff;
+                justify-content: center;
+                /*margin-left: 540px;*/
             }
         }
         

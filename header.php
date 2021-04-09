@@ -36,17 +36,24 @@
 
 <div class="header-background">
   
-  <div class="container">
+  <div class="container-fluid">
+
 
     <div class="row justify-content-center" id="hayday">
-      <?php   echo '<img class="title-uon" src="' . get_bloginfo('template_directory') . '/img/uon.png" />'; ?>
+      <div class="col-md" id="palp">
+        <?php   echo '<img class="title-uon" src="' . get_bloginfo('template_directory') . '/img/uon.png" />'; ?>
+      </div>
+      <div class="col-md">
+        <?php   echo '<img class="title-sra" src="' . get_bloginfo('template_directory') . '/img/sra.png" />'; ?>
+      </div>
+    </div>
 
-      <?php   echo '<img class="title-sra" src="' . get_bloginfo('template_directory') . '/img/sra.png" />'; ?>
+    <div class="row justify-content-center" id="hayday">
+
     <div class="neem ">
       <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?><!-- 
       --><h1 class="website-name ">University Radio Nottingham</h1> 
-    </div>
-   
+</div>
   </div>      <!-- TODO make a popup radio player like university radio york or insanity radio-->
         <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none"  ></audio>
           <script>
@@ -96,9 +103,9 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
           <button class="navbar-toggler" id="sum" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-            <span class="toggle row justify-content-center">MENU</span>
+            <span class="toggle"><i class="fas fa-bars"></i></span>
           </button>
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">MENU</a>
               <?php
                 wp_nav_menu( array(
                     'theme_location'    => 'header-menu',
