@@ -19,12 +19,14 @@
                     <div class="row no-gutters">
                         <div class="col-md-8">
                             <div class="card-body " id="now-playing-card-body2">
-                                <h5 class="card-title text-center" id="now-playing-upnext-title2">NOW PLAYING</h5>
+                              <h5 class="card-title text-center" id="now-playing-upnext-title2">NOW PLAYING</h5>
                                <!-- <h2 class="show-title-prelude">URN presents</h2>-->
+                               <div class="show-info">
 
                                 <h1 class="show-title-name">URN Live</h1>
 
                                 <h3 class="show-title-time">24/7</h3>
+</div>
                                 <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
                                 
                                 <audio class="ug" controls autoplay>
