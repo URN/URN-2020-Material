@@ -30,8 +30,8 @@ get_header(); ?>
 
                     // Include the page content template.
  ?> 
- <div class="row">
-  <div class="col">
+ <div class="row justify-content-center" id="whiteness">
+  <div class="col" id="whiteness">
     <?php 
       $user = wp_get_current_user();
       if ( in_array( 'Administrator', $user->roles ) ) { ?>
@@ -42,9 +42,7 @@ get_header(); ?>
    <?php  } ?>
 
   <article id="post-<?php the_ID();?>" <?php post_class();?>>
-    <header class="entry-header">
-      <?php the_title('    <div class="d-flex justify-content-center"> <h1 class="entry-title-alt">','</h1> </div>');?>
-    </header>
+      <?php the_title('    <h1 class="entry-title-alt">','</h1> ');?>
  </div>
  </div>
     <div class="entry-content">
@@ -84,17 +82,19 @@ get_header(); ?>
                       </div>
             <div class="row">
   <!-- Card Start -->
+
+
 <div class="card" id="host-show-card" style="width: 58rem;">
   <div class="card-body">
-  <h5 class="card-title" ><div class="wal"><div class="text-center"><i class="fas fa-podcast"></i> <?php echo get_the_title(get_page_by_path( 'daytime', OBJECT, 'post' ));?></div></div></h5> <!-- 148 = daytime id-->
-  <div class="aiko"> <p class="card-text mb-2"> <?php $id = get_page_by_path( 'daytime', OBJECT, 'post' ); // add the ID of the page where the zero is
+  <h5 class="card-title" ><div class="wal"><div class="text-center"><i class="fas fa-podcast"></i> <?php echo get_the_title(get_page_by_path( 'daytime', OBJECT, 'post' ));?></div></div></h5> <!-- 152 = speech id-->
+  <div class="aiko">  <p class="card-text mb-2">  <?php $id = get_page_by_path( 'daytime', OBJECT, 'post' ); // add the ID of the page where the zero is
                                 $p = get_page($id);
                                 echo apply_filters('the_content', $p->post_content);?></p>
     <a href="#" class="card-link">daytime@urn1350.net</a>
-    </div>
-  
+  </div>
+ </div>
 </div>
-</div>
+                    
     <!-- Card Start2 -->
     
  <div class="card text-right" id="host-show-card" style="width: 58rem;">
