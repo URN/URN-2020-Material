@@ -23,8 +23,14 @@ function urn_material_scripts() {
 add_action( 'wp_enqueue_scripts', 'urn_material_scripts' );
     
     
+function ourWidgetsInit(){
+  register_sidebar( array (
+    'name' => 'Sidebar',
+    'id' => 'sidebar1',
 
-
+  ));
+}
+add_action('widgets_init', 'ourWidgetsInit');
 
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
