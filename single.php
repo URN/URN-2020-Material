@@ -4,48 +4,36 @@
  */
 get_header()?>
   <?php
-                // Start the loop.                </div>
-                while ( have_posts() ) : the_post();
+    // Start the loop.                </div>
+    while ( have_posts() ) : the_post();
 
-                    // Include the page content template.
-                
+        // Include the page content template.
 
-            ?> 
+
+  ?> 
            
   <!-- Page Content -->
-
   <div class="container">
-
-
     <div class="row">
-
       <!-- Post Content Column -->
-
-      
       <div class="col-lg-12" id="rum" >
         <!-- Title -->
         <h1 class="mt-4"><?php the_title() ?></h1>
-
-        <!-- Author -->
-        <p class="lead">
-          by
-          <a href="#"><?php echo get_the_author(); ?></a>
-        </p>
-
-        <hr>        
-
-
-        <!-- Date/Time -->
-        <p>Posted on <?php echo get_the_date();?></p>
-
-        
-
-        <!-- Preview Image -->
-        <img class="card-img-top"src="<?php the_post_thumbnail_url('thumb_image');?>" alt="Card image cap">
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="#"><?php echo get_the_author(); ?></a>
+          </p>
+          <hr>        
+          <!-- Date/Time -->
+          <p>Posted on <?php echo get_the_date();?></p>
+          <!-- Preview Image -->
+          <img class="card-img-top"src="<?php the_post_thumbnail_url('thumb_image');?>" alt="Card image cap">
 
         <!-- Post Content -->
         <?php // Include the page content template.
-the_content();?>
+          the_content();
+        ?>
        <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
@@ -65,28 +53,25 @@ the_content();?>
 
         <hr>-->
       </div>
-
-   
     </div>
     <!-- /.row -->
-
   </div>
   <!-- /.container -->
-  <div class="row">
-                <div class="col">
-                <?php
-                        edit_post_link(
-                            sprintf(
-                                esc_html__('Edit %s', 'URN-2020Redesign'),
-                                the_title('<span class="screen-reader-text">"','"
-                                </span>', false)
-                            ),
-                            '<span class="edit-link">',
-                            '</span>'
-                        );
-                    ?>
-                    </div>
-                    </div>
+    <div class="row">
+      <div class="col">
+        <?php
+                edit_post_link(
+                    sprintf(
+                        esc_html__('Edit %s', 'URN-2020Redesign'),
+                        the_title('<span class="screen-reader-text">"','"
+                        </span>', false)
+                    ),
+                    '<span class="edit-link">',
+                    '</span>'
+                );
+          ?>
+        </div>
+    </div>
   <?php
 
 

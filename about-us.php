@@ -23,32 +23,31 @@ get_header(); ?>
 
 
 <div class="main-page-content">
-<?php
-                // Start the loop.                </div>
-                while ( have_posts() ) : the_post();
+    <?php
+        // Start the loop.                </div>
+        while ( have_posts() ) : the_post();
 
-                    // Include the page content template.
-                
+            // Include the page content template.
+        
 
-            ?> 
-            <div class="row" id="whiteness">
-                <div class="col">
-
-                <?php 
-      $user = wp_get_current_user();
-      if ( in_array( 'Administrator', $user->roles ) ) { ?>
-          <!-- Any HTML what you need to hide from "Customers" and show for "Vendor" -->
-      	<div>
-      	  <?php edit_post_link(__('Edit Page')); ?>
-    	</div>
-      <?php  } ?>
+    ?> 
+    <div class="row" id="whiteness">
+        <div class="col">
+            <?php 
+                $user = wp_get_current_user();
+                if ( in_array( 'Administrator', $user->roles ) ) {
+            ?>
+                    <!-- Any HTML what you need to hide from "Customers" and show for "Vendor" -->
+            <div>
+      	        <?php edit_post_link(__('Edit Page')); ?>
+    	    </div>
+                <?php  } ?>
 
             <article id="post-<?php the_ID();?>" <?php post_class();?>>
                 <header class="entry-header ">
-                 
-                        <?php the_title('    <div class="text-center"> <h1 class="verticaltext_content">','</h1> </div>');?>
-                    </div>
-            </div>
+                    <?php the_title('    <div class="text-center"> <h1 class="verticaltext_content">','</h1> </div>');?>
+        </div>
+    </div>
     
     <div class="entry-content">
         <div class="container">
@@ -56,12 +55,8 @@ get_header(); ?>
                 <div class="col-sm-1">      
                 </div>
                 <div class="col-sm-10">      
-                    
-           
-             
                 </header>
                <!-- <div class="text-left"> CHANGE THIS FOR TEXT ALLIGNMENT-->
-
                     <?php the_content(); ?>
                     <?php
                         wp_link_pages( array(
@@ -83,26 +78,18 @@ get_header(); ?>
                         );
                     ?>
 
-
-<!--
-<div class="verticaltext">
-    <div class="verticaltext_content">Test 12</div>
-   -->
-</div>
+            </div>
                 </footer>
             </article>
-            <?php    // End the loop.
-                endwhile;
-            ?>
-            </div>
-                <div class="col-sm-1">      
-                </div>
-            </div>
+                <?php    // End the loop.
+                    endwhile;
+                ?>
         </div>
+            <div class="col-sm-1">      
+            </div>
     </div>
-    
-  
 </div>
+
 <!--
 <div class="jumbotron" id = "jumbo-about">
   <div class="purp">

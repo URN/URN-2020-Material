@@ -13,7 +13,7 @@ get_header(); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="University Radio Nottingham is the multi-award–winning university radio station of the University of Nottingham Students’ Union.">
   <meta name="author" content="">
-  <title>URN MAIN SITE</title>
+  <title>University Radio Nottingham</title>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/fontawesome-free/css/all.min.css' ?>">
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(). '/vendor/bootstrap/css/bootstrap.min.css' ?>">
@@ -27,22 +27,16 @@ get_header(); ?>
 
 </head>
 
-
-
  <!-- Masthead -->
  <header class="masthead text-white text-center" id="quote-masthead">
     <div class="overlay"></div>
     <div class="container">
-
-    <div class="container">
+      <div class="container">
         <!-- FOR DEMO PURPOSE -->
         <div class="row">
             <div class="col-lg-6 mx-auto">
-              
             </div>
         </div><!-- END -->
-
-
         <div class="row">
             <div class="col-lg-6 mx-auto">
 
@@ -67,114 +61,95 @@ get_header(); ?>
 
 </header>
 <body>
-
-
-
-
-
-
   <!-- Image Showcases -->
   <div id="white-urn-back">
-  <div class="row justify-content-center" id="whiteness">
-
-          <h1 class="entry-title">GET INVOLVED</h1>
-      </div>
-  <section class="showcase">
-    <div class="container">
-<div class="row">
-<div class="col">
-<p>URN aims to provide our listeners with your news, music and content. We thrive in motivating and providing a platform for upcomming stars to help create a platform to share all our perspectives, ideas and music. Whether your an aspiring muscisian, presenter or want to join the Tech Team, there is always opportunity. See the below links for more information on who to contact!</p>
-</div>
-</div>
-                    </div>
-                    </div>
- 
-<?php if(have_posts()) : while(have_posts()) : the_post();?>
-  <?php the_content();?>
-  <?php endwhile; else: endif;?>
-    <div class="container-fluid p-0">
-      <div class="row no-gutters" id="involved-box">
-<!-- Music section-->
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img1" >   
-                  <?php if(has_post_thumbnail( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ) )):?>
-                  <a href="<?php the_permalink();?>">
-                     <img src="<?php echo get_the_post_thumbnail_url( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>">
-                   </a>
-                  <?php endif?> 
-</div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text"> 
-          <div class="container">
-
-
-
-          <h2>     <?php echo get_the_title( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>         </h2>
-          <p class="lead mb-0">     <?php echo get_the_excerpt( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>
-</p>          <div class="involved-btn">
-
-<a href="<?php echo site_url('/musicians-and-artists'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
-        </div>
-                  </div>
-        </div>
-
-      </div>
-      <!-- Host a show section-->
-
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img2">
-        <?php if(has_post_thumbnail(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ))):?>
-                  <a href="<?php the_permalink();?>">
-                     <img src="<?php echo get_the_post_thumbnail_url(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ));?>">
-                   </a>
-                  <?php endif?> 
-        </div>
-        <div class="col-lg-6 my-auto showcase-text">
-        <div class="container">
-              <h2>     <?php echo get_the_title(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ));?></h2>
-          <p class="lead mb-0">   <?php echo get_the_excerpt(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ) );?></p>
-          <div class="involved-btn">
-
-         <a href="<?php echo site_url('/host-a-show'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
-        </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img3" >
-        <?php if(has_post_thumbnail(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ))):?>
-                  <a href="<?php the_permalink();?>">
-                     <img src="<?php echo get_the_post_thumbnail_url(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?>">
-                   </a>
-                  <?php endif?> 
-        </div>
-        <!-- Tech section-->
-
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        <div class="container">
-          <h2><?php echo get_the_title(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></h2>
-          <p class="lead mb-0"><?php echo get_the_excerpt(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></p>
-          <div class="involved-btn">
-          <a href="<?php echo site_url('/tech-team'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
-          </div>
-
-        </div>
-      </div>
-</div>
+    <div class="row justify-content-center" id="whiteness">
+      <h1 class="entry-title">GET INVOLVED</h1>
     </div>
-  </section>
-
+    <section class="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>URN aims to provide our listeners with your news, music and content. We thrive in motivating and providing a platform for upcomming stars to help create a platform to share all our perspectives, ideas and music. Whether your an aspiring muscisian, presenter or want to join the Tech Team, there is always opportunity. See the below links for more information on who to contact!</p>
+          </div>
+        </div>
+      </div>
+  </div>
+ 
+  <?php if(have_posts()) : while(have_posts()) : the_post();?>
+    <?php the_content();?>
+    <?php endwhile; else: endif;?>
+      <div class="container-fluid p-0">
+        <div class="row no-gutters" id="involved-box">
+<!-- Music section-->
+          <div class="col-lg-6 order-lg-2 text-white showcase-img1" >   
+            <?php if(has_post_thumbnail( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ) )):?>
+              <a href="<?php the_permalink();?>">
+                <img src="<?php echo get_the_post_thumbnail_url( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>">
+              </a>
+            <?php endif?> 
+          </div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text"id="involved-text" > 
+            <div class="container">
+              <h2 id="remove-overflow" > <?php echo get_the_title( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?>         </h2>
+              <p class="lead mb-0">     <?php echo get_the_excerpt( get_page_by_path( 'for-musicians-and-artists', OBJECT, 'post' ));?></p>        
+                <div class="involved-btn">
+                  <a href="<?php echo site_url('/musicians-and-artists'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      <!-- Host a show section-->
+      <div class="row no-gutters" id="involved-box">
+        <div class="col-lg-6 text-white showcase-img2">
+          <?php if(has_post_thumbnail(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ))):?>
+            <a href="<?php the_permalink();?>">
+              <img src="<?php echo get_the_post_thumbnail_url(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ));?>">
+            </a>
+          <?php endif?> 
+        </div>
+          <div class="col-lg-6 my-auto showcase-text" id="involved-text">
+            <div class="container">
+              <h2 id="remove-overflow">     <?php echo get_the_title(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ));?></h2>
+              <p class="lead mb-0">   <?php echo get_the_excerpt(get_page_by_path( 'looking-to-host-a-show', OBJECT, 'post' ) );?></p>
+                <div class="involved-btn">
+                  <a href="<?php echo site_url('/host-a-show'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
+                </div>
+            </div>
+          </div>
+      </div>
+        <div class="row no-gutters" id="involved-box">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img3" >
+            <?php if(has_post_thumbnail(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ))):?>
+              <a href="<?php the_permalink();?>">
+                <img src="<?php echo get_the_post_thumbnail_url(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ), 'thumb_image');?>" class= "involved-img" alt="<?php get_the_title(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?>">
+              </a>
+            <?php endif?> 
+          </div>
+        
+          <!-- Tech section-->
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text" id="involved-text">
+          <div class="container">
+            <h2 id="remove-overflow"> <?php echo get_the_title(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></h2>
+            <p class="lead mb-0"><?php echo get_the_excerpt(get_page_by_path( 'join-the-urn-tech-team', OBJECT, 'post' ));?></p>
+              <div class="involved-btn">
+                <a href="<?php echo site_url('/tech-team'); ?>"> <button type="button" class="btn btn-primary" id="listen-again" >Learn More</button></a>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
   <section class="involved-foot">
     <div class="card text-center">
-
-    <div class="card-body">
-      <h5 class="card-title">  <h5 class="entry-title"> General Inquiries <h5></h5>
-      <p class="card-text">For any additional queries, get in touch at      <a href="#" >management@urn1350.net</a> </p>
+      <div class="card-body">
+        <h5 class="card-title">  
+          <h5 class="entry-title"> General Inquiries 
+          </h5>
+        </h5>
+        <p class="card-text">For any additional queries, get in touch at      <a href="#" >management@urn1350.net</a> </p>
+      </div>
     </div>
-
-    </div>
-
-        </section>
+  </section>
 
 
   

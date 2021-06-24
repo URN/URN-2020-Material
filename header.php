@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Landing Page - Start Bootstrap Theme</title>
+  <title>University Radio Nottingham</title>
 
   <!-- Bootstrap core CSS -->
   <link  rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(). '/vendor/bootstrap/css/bootstrap.min.css'?> ">
@@ -35,31 +35,26 @@
 
 
 <div class="header-background">
-  
   <div class="container-fluid">
-
-
-    <div class="row justify-content-center" id="hayday">
-      <div class="col-md" id="palp">
+    <div class="row justify-content-center" id="headerrow">
+      <div class="col-md" id="uon-logo-header">
         <?php   echo '<img class="title-uon" src="' . get_bloginfo('template_directory') . '/img/uon.png" />'; ?>
       </div>
-      <div class="col-md" id="ana">
+      <div class="col-md" id="sra-logo-header">
         <?php   echo '<img class="title-sra" src="' . get_bloginfo('template_directory') . '/img/sra.png" />'; ?>
       </div>
     </div>
+    <div class="row justify-content-center" id="headerrow">
 
-    <div class="row justify-content-center" id="hayday">
-
-    <div class="neem ">
-      <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?><!-- 
-      --><h1 class="website-name ">University Radio Nottingham</h1> 
-</div>
-  </div>      <!-- TODO make a popup radio player like university radio york or insanity radio-->
-        <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none"  ></audio>
-          <script>
-            var myAudio = document.getElementById("urnlive");
-            var isPlaying = false;
-
+      <div class="just-flex">
+        <?php   echo '<img class="title-logo" src="' . get_bloginfo('template_directory') . '/img/urnwhite.png" />'; ?> 
+          <h1 class="website-name">University Radio Nottingham</h1> 
+      </div>
+    </div>      <!-- TODO make a popup radio player like university radio york or insanity radio-->
+      <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none"  ></audio>
+        <script>
+          var myAudio = document.getElementById("urnlive");
+          var isPlaying = false;
             function togglePlay() {
               if (isPlaying) {
                 myAudio.pause()
@@ -77,32 +72,21 @@
             myAudio.onpause = function() {
               isPlaying = false;
             };
-          </script>
+        </script>
 
   </div>
-  <!-- 
-  <div class="row">
-        <div class="col-lg-3">
-          <h1></h1>
-        </div>
-        <div class="col-lg-9">
-        </div>
-       
-  </div>-->
-<div class="container ">
-  <div class="col justify-content-center" >
-    <h2 id="slogan">Your Music. Your News. Your Student Radio.</h2>
-  </div>
-</div>
+    <div class="container ">
+      <div class="col justify-content-center" >
+        <h2 id="slogan">Your Music. Your News. Your Student Radio.</h2>
+      </div>
+    </div>
 
   <div class="header">
     <div class="row justify-content-center" id="whiteness">
-
-
       <nav class="navbar navbar-expand-xl navbar-light " role="navigation"> <!-- might change to lg if it looks better -->
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-          <button class="navbar-toggler" id="sum" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+          <button class="navbar-toggler" id="nav-id" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
             <span class="toggle"><i class="fas fa-bars"></i></span>
           </button>
             <a class="navbar-brand" href="#">MENU</a>

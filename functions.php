@@ -4,9 +4,6 @@
 /**
  * Register Custom Navigation Walker
  */
-
-
-
 function urn_material_scripts() {
     // Load our main stylesheet.
     wp_enqueue_style('main-style', get_stylesheet_uri());
@@ -17,12 +14,9 @@ function urn_material_scripts() {
       wp_enqueue_script('the-schedule', get_template_directory_uri() . '/js/schedule.js', array('jquery'), false, true);
 
   //}
-
-  
 }
 add_action( 'wp_enqueue_scripts', 'urn_material_scripts' );
-    
-    
+      
 function ourWidgetsInit(){
   register_sidebar( array (
     'name' => 'Sidebar',

@@ -18,44 +18,39 @@
 
 
 <div class="main-page-content-alt">
-<?php
-                // Start the loop.                </div>
-                while ( have_posts() ) : the_post();
+    <?php
+    // Start the loop.                </div>
+        while ( have_posts() ) : the_post();
 
-                    // Include the page content template.
-                
+        // Include the page content template.
+    
 
-            ?> 
-            <div class="row">
-                <div class="col">
+    ?> 
+    <div class="row">
+        <div class="col">
 
-                <?php 
-      $user = wp_get_current_user();
-      if ( in_array( 'Administrator', $user->roles ) ) { ?>
-          <!-- Any HTML what you need to hide from "Customers" and show for "Vendor" -->
-      	<div>
-      	  <?php edit_post_link(__('Edit Page')); ?>
-    	</div>
-      <?php  } ?>
+            <?php 
+                $user = wp_get_current_user();
+                if ( in_array( 'Administrator', $user->roles ) ) { ?>
+                    <!-- Any HTML what you need to hide from "Customers" and show for "Vendor" -->
+            <div>
+      	        <?php edit_post_link(__('Edit Page')); ?>
+    	    </div>
+            <?php  } ?>
 
             <article id="post-<?php the_ID();?>" <?php post_class();?>>
                 <header class="entry-header">
-                 
-                        <?php the_title('    <div class="d-flex justify-content-center"> <h1 class="entry-title">','</h1> </div>');?>
+                    <?php the_title('    <div class="d-flex justify-content-center"> <h1 class="entry-title">','</h1> </div>');?>
+        </div>
+    </div>
+        <div class="entry-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1">      
                     </div>
-            </div>
-    <div class="entry-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-1">      
-                </div>
-                <div class="col-sm-10">      
-                    
-           
-             
+                    <div class="col-sm-10">      
                 </header>
                <!-- <div class="text-left"> CHANGE THIS FOR TEXT ALLIGNMENT-->
-
                     <?php the_content(); ?>
                     <?php
                         wp_link_pages( array(
@@ -63,35 +58,34 @@
                             'after' => '</div',
                         ));
                     ?>   
-                </div>
-                <footer class="entry-footer">
-                    <?php
-                        edit_post_link(
-                            sprintf(
-                                esc_html__('Edit %s', 'URN-2020Redesign'),
-                                the_title('<span class="screen-reader-text">"','"
-                                </span>', false)
-                            ),
-                            '<span class="edit-link">',
-                            '</span>'
-                        );
-                    ?>
+                    </div>
+                        <footer class="entry-footer">
+                            <?php
+                                edit_post_link(
+                                    sprintf(
+                                        esc_html__('Edit %s', 'URN-2020Redesign'),
+                                        the_title('<span class="screen-reader-text">"','"
+                                        </span>', false)
+                                    ),
+                                    '<span class="edit-link">',
+                                    '</span>'
+                                );
+                            ?>
 
 
-                </footer>
+                        </footer>
             </article>
-            <?php    // End the loop.
-                endwhile;
-            ?>
-            </div>
-                <div class="col-sm-1">      
+                <?php    // End the loop.
+                    endwhile;
+                ?>
                 </div>
+                    <div class="col-sm-1">      
+                    </div>
             </div>
         </div>
     </div>
-    <div class="page-section2">
-        
-    </div>
+        <div class="page-section2">
+        </div>
 </div>
  <?php get_footer(); ?> 
 

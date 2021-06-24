@@ -11,7 +11,6 @@
 <?php $minimiseT = is_home() ? 'Shrink' : 'Expand' ?>
 <?php $btn = is_page( 'stream' ) ? 'display: none;' : '' ?>
 <div id="listen-now" >   
-    
     <div class="show-container" id="streams" style="<?php echo $minimise; ?>">
         <div class="content ">
             <div class="container">
@@ -21,22 +20,18 @@
                             <div class="card-body " id="now-playing-card-body2">
                               <h5 class="card-title text-center" id="now-playing-upnext-title2">NOW PLAYING</h5>
                                <!-- <h2 class="show-title-prelude">URN presents</h2>-->
-                               <div class="show-info">
+                                <div class="show-info">
 
-                                <h1 class="show-title-name">URN Live</h1>
-
-                                <h3 class="show-title-time">24/7</h3>
-</div>
+                                    <h1 class="show-title-name">URN Live</h1>
+                                    <h3 class="show-title-time">24/7</h3>
+                                </div>
                                 <button class="right-button"> <a class="presenter-link" href="https://www.facebook.com/people/Kathryn-Embree/100006144706858" target="_blank"> CONTACT PRESENTERS </a> </button>
-                                
-                                <audio class="ug" controls autoplay>
+                                <audio class="listen-now-audio" controls autoplay>
                                    <source src="https://live.urn1350.net/listen"  class="player" type="audio/mpeg">
                                 </audio>  
                             </div>
-                        </div>
-                        
+                        </div>  
                     <div class="col-md-4" >
-
                         <span  alt=""  class="show-image" alt="<?php echo get_template_directory_uri(); ?>/img/grp.jpg" id="presenterIMG"> <img class="img-fluid rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/img/grp.jpg" alt=""> </span>
                             <div class="card-img-overlay">
                                 <audio id="urnlive" src="https://live.urn1350.net/listen" preload="none" ></audio>
@@ -74,43 +69,31 @@
         </div> 
     </div>
 
-
-
-
-
         <!--<a href="/stream" title="Listen now!" target="_blank" class="play">Listen Now</a>-->
-<br>
-
-
-
-        <div class="card mx-auto" id="card-stream">
-  
-            <div class="card-body">
+    <br>
+    <div class="card mx-auto" id="card-stream">
+        <div class="card-body">
             <div class="container">
-
-          <div class="col-md-7">
-                <h5 class="card-title" id="card-stream-title">MESSAGE <br> THE <br> STUDIO</h5>
+                <div class="col-md-7">
+                    <h5 class="card-title" id="card-stream-title">MESSAGE <br> THE <br> STUDIO</h5>
                 </div>
-                
                 <div class="col-md-5">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/urnwhite.png" alt=""  class="smol-stream-img" alt="..." id="">
-<div class="kill">
-                    <form id="message-the-studio" name="message-the-studio" method="post" action="">
-                    <span class="message"></span>
-                    <textarea  class = "textbox" autocomplete="off" name="studio-message"
-                            placeholder="<?php echo $message_studio_placeholder; ?>"
-                            aria-label="Text area to message into the studios"></textarea>
-                    <button autocomplete="off" class="btn" type="submit" name="submit">Send</button>
-                     </form>
-                     </div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/urnwhite.png" alt=""  class="small-stream-img" alt="..." id="">
+                        <div class="message-studio-area">
+                            <form id="message-the-studio" name="message-the-studio" method="post" action="">
+                                <span class="message"></span>
+                                <textarea  class = "textbox" autocomplete="off" name="studio-message"
+                                        placeholder="<?php echo $message_studio_placeholder; ?>"
+                                        aria-label="Text area to message into the studios"></textarea>
+                                <button autocomplete="off" class="btn" type="submit" name="submit">Send</button>
+                            </form>
+                        </div>
                 </div>
             </div>
-            </div>
-        </div>
-
-        <div class="send-message">
-          
         </div>
     </div>
+    <div class="send-message"> 
+    </div>
+</div>
 </div>
 

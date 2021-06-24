@@ -30,16 +30,13 @@ get_header(); ?>
 
 </head>
 <body class="stream">
-    <!--
-
-<img src="<?php echo get_template_directory_uri(); ?>/urn.png" alt="URN Logo">
+  <!--
+  <img src="<?php echo get_template_directory_uri(); ?>/urn.png" alt="URN Logo">
     <h1>University Radio Nottingham</h1>-->
-<div class="container">
-<?php include('includes/listen-now2.php'); ?>
-
-   
+    <div class="container">
+      <?php include('includes/listen-now2.php'); ?>
     </div>
-<br>
+    <br>
 </body>
 <?php get_footer(); ?> 
 
